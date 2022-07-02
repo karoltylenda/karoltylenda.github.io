@@ -1,66 +1,73 @@
 <!doctype html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/tempStyle.css">
 
     <script src="https://kit.fontawesome.com/a7b3ef69ce.js" crossorigin="anonymous"></script>
 
     <title>KT_DEV</title>
-  </head>
+</head>
 <body>
-    <div class="content" style="width: 100%">
-        <div class="logo-top">
-            <img src="/images/logo/logo-small.png">
+<div class="section is-large" style="display: table-row;">
+    <div class="section is-flex is-justify-content-space-between">
+        <div style="text-transform: uppercase; font-weight: bold; font-size: 24px">
+            <p>Java Developer</p>
         </div>
-        <div class="intro-wrap">
-            <p class="name-text">Karol Tylenda</p>
-            <p class="p-light">Java Developer</p>
-            <p class="heading-jumbo">Hello there!!! I'm a JAVA Developer</p>
-        </div>
-    </div>
-    <!--SIDEBAR--> 
-    <div class="menu" id="menu">
-        <div class="menu-list" id="menu-list">
-            <a href="#" onclick="removeMenuActive()">Home</a>
-            <a href="#" onclick="removeMenuActive()">About</a>
-            <a href="#" onclick="removeMenuActive()">Services</a>
-            <a href="#" onclick="removeMenuActive()">Portfolio</a>
-            <a href="#" onclick="removeMenuActive()">Contact</a>
-        </div>
-        <div class="menu-button" id="menu-button">
-            <a href="#">Menu</a>
-        </div>
-        <div class="menu-close-button" id="menu-close-button">
-            <a href="#">
-            <ion-icon name="close-outline"></ion-icon>
-            </a>
+        <div style="text-align: end;">
+            <p>page 1 of 5</p>
         </div>
     </div>
-    <!--END OF SIDEBAR-->
+</div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<div class="section" id="main" style="display: table-cell; padding-left: 64px; padding-right: 64px;">
+    <div class="columns is-desktop is-vcentered" style="gap: 10vh">
+        <div class="column is-half-desktop">
+            <div class="container" id="introduce">
+                <p>introduce</p>
+            </div>
+            <div class="container" id="aboutMeHeader">
+                <p>about me</p>
+            </div>
+            <div class="container" id="aboutMeContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia sapien vitae est fringilla, sed aliquet nulla ullamcorper.
+                    Aliquam erat volutpat. Nunc quis venenatis felis, nec porttitor ligula. Nam iaculis magna arcu, at mattis neque ultricies at.
+                    Ut consequat eu tellus a tincidunt. Morbi vel urna fermentum, egestas est sit amet, luctus enim.
+                    Vestibulum porttitor, urna vel egestas dictum, orci risus consectetur justo, non egestas velit risus quis elit. Mauris vel tincidunt sem.
+                    Proin sed justo semper risus vulputate condimentum. Phasellus quis enim sed risus posuere convallis in vitae urna.</p>
+            </div>
+        </div>
+        <div class="column is-fullwidth">
+            <div class="columns is-fullwidth is-vcentered">
+                <div class="column is-three-fifths-tablet is-flex is-three-fifths-desktop" id="imgContainer">
+                    <div class="p-5" id="aboutMeImg">
+                        <img src="/images/classy_man.jpeg">
+                    </div>
+                </div>
+                <div class="column" id="nameContainer">
+                    <p>Karol</p>
+                    <p>Tylenda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section is-large" style="display: table-row;">
+    <div class="section is-flex is-justify-content-space-between">
+        <div style="display: flex; text-align: start; margin-top: auto; margin-bottom: auto;">
+            <a href="https://karoltylenda.github.io/" style="color: black; font-size: small">karoltylenda.github.io</a>
+        </div>
+        <div style="display: flex; text-align: end; margin-top: auto; margin-bottom: auto; font-family: 'Splash', sans-serif; font-size: xx-large;">
+            <a href="#" style="color: #b91646">--></a>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-<script>
-    const menu = document.querySelector('#menu');
-    const menuList = menu.querySelector('#menu-list');
-    const menuButton = document.querySelector('#menu-button');
-    const menuCloseButton = document.querySelector('#menu-close-button');
-    menuCloseButton.onclick = () => {
-        menuCloseButton.classList.remove('menu-close-button-active');
-        menu.classList.remove('menu-active');
-        menuList.classList.remove('menu-list-active');
-        menuButton.classList.remove('menu-button-inactive');
-    }
-    menuButton.onclick = () => {
-        menu.classList.add('menu-active');
-        menuCloseButton.classList.add('menu-close-button-active');
-        menuList.classList.add('menu-list-active');
-        menuButton.classList.add('menu-button-inactive');
-    }
-</script>
-</html> 
+</html>

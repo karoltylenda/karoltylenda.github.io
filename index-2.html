@@ -11,20 +11,21 @@
 
     <title>KT_DEV</title>
 </head>
-<body class="hero is-flex">
-
-    <section class="section hero-head is-flex is-uppercase">
-        <div class="container has-text-left" style="font-size: 32px; letter-spacing: -1px;">
-            karol tylenda
+<body>
+    <div class="section is-large" style="display: table-row;">
+        <div class="section is-flex is-justify-content-space-between">
+            <div style="text-transform: uppercase; font-weight: bold; font-size: 24px">
+                <p>Java Developer</p>
+            </div>
+            <div style="text-align: end;">
+                <p>page 1 of 5</p>
+            </div>
         </div>
-        <div class="container has-text-right">
-            Page 1 of 5
-        </div>
-    </section>
+    </div>
 
-    <section class="section hero-body">
-        <div class="columns is-vcentered is-fullwidth">
-            <div class="column p-6">
+    <div class="section" id="main" style="display: table-cell; padding-left: 64px; padding-right: 64px;">
+        <div class="columns is-desktop is-vcentered" style="gap: 10vh">
+            <div class="column is-half-desktop">
                 <div class="container" id="introduce">
                     <p>introduce</p>
                 </div>
@@ -33,38 +34,40 @@
                 </div>
                 <div class="container" id="aboutMeContent">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia sapien vitae est fringilla, sed aliquet nulla ullamcorper.
-                    Aliquam erat volutpat. Nunc quis venenatis felis, nec porttitor ligula. Nam iaculis magna arcu, at mattis neque ultricies at.
-                    Ut consequat eu tellus a tincidunt. Morbi vel urna fermentum, egestas est sit amet, luctus enim.
-                    Vestibulum porttitor, urna vel egestas dictum, orci risus consectetur justo, non egestas velit risus quis elit. Mauris vel tincidunt sem.
-                    Proin sed justo semper risus vulputate condimentum. Phasellus quis enim sed risus posuere convallis in vitae urna.</p>
+                        Aliquam erat volutpat. Nunc quis venenatis felis, nec porttitor ligula. Nam iaculis magna arcu, at mattis neque ultricies at.
+                        Ut consequat eu tellus a tincidunt. Morbi vel urna fermentum, egestas est sit amet, luctus enim.
+                        Vestibulum porttitor, urna vel egestas dictum, orci risus consectetur justo, non egestas velit risus quis elit. Mauris vel tincidunt sem.
+                        Proin sed justo semper risus vulputate condimentum. Phasellus quis enim sed risus posuere convallis in vitae urna.</p>
                 </div>
             </div>
-            <div class="column">
-
-            </div>
-            <div class="column">
-                <div class="container">
-                    <p>Prawa kolumna</p>
+            <div class="column is-fullwidth">
+                <div class="columns is-fullwidth is-vcentered">
+                    <div class="column is-three-fifths-tablet is-flex is-three-fifths-desktop" id="imgContainer">
+                        <div class="p-5" id="aboutMeImg">
+                            <img src="/images/classy_man.jpeg">
+                        </div>
+                    </div>
+                    <div class="column" id="nameContainer">
+                        <p>Karol</p>
+                        <p>Tylenda</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="section hero-foot">
-        <div class="is-flex is-flex-direction-row is-justify-content-space-between">
-            <div class="is-flex is-justify-content-center is-align-items-center" style="gap: 1vw">
-                <ion-icon style="font-size: large" name="arrow-back-outline"></ion-icon>
-                <p class="is-uppercase">previous page</p>
+    <div class="section is-large" style="display: table-row;">
+        <div class="section is-flex is-justify-content-space-between">
+            <div style="display: flex; text-align: start; margin-top: auto; margin-bottom: auto;">
+                <a href="https://karoltylenda.github.io/" style="color: black; font-size: small">karoltylenda.github.io</a>
             </div>
-            <a class="is-flex is-justify-content-center is-align-items-center" style="gap: 1vw; color: black">
-                <p class="is-uppercase">next page</p>
-                <ion-icon style="font-size: large" name="arrow-forward-outline"></ion-icon>
-            </a>
+            <div style="display: flex; text-align: end; margin-top: auto; margin-bottom: auto; font-family: 'Splash', sans-serif; font-size: xx-large;">
+                <a href="#" style="color: #b91646">--></a>
+            </div>
         </div>
-    </section>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
