@@ -103,3 +103,21 @@ body {
     height: 50vh;
     border-radius: 5px;
 }
+#menu ul {
+    display: flex;
+    flex: 1;
+    gap: 2vw;
+}
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: black;
+    transition: 0.1s ease-in-out;
+}
+
+#menu ul li:hover a {
+    border-bottom: 1px solid var(--stringPink);
+    color: var(--stringPink);
+}
