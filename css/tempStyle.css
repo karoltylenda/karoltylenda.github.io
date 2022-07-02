@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 568px){
+
+}
+
+:root {
+    --darkSienna: #3F0D12;
+    --crimsonUA: #A71D31;
+    --lightGoldenrotYellow: #F1F0CC;
+    --ecru: #D5BF86;
+    --shadow: #8D775F;
+    --gunMetal: #2C363F;
+    --fernGreen: #3A7D44;
+    --airSuperiorityBlue: #759FBC;
+    --teaGreen: #DBEFBC;
+    --nyanza: #E2FADB;
+
+    --lightGrayishOrange: #fbf3e4;
+    --stringPink: #b91646;
+    --veryDarkCyan: #105652;
+    --brightOrange: #f9c041;
+}
+
+html {
+    background-color: var(--lightGrayishOrange);
+}
+
+body {
+    height: 100vh;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#introduce {
+    font-family: 'Splash', cursive;
+    font-size: xxx-large;
+    color: #b91646;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+}
+
+#aboutMeHeader {
+    font-size: xxx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+    top: -20px;
+}
