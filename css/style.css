@@ -56,6 +56,44 @@ body {
     margin: 0 auto;
 }
 
+#head {
+    display: table-row;
+}
+
+#head div:nth-child(1) {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#head div:nth-child(2) {
+    font-size: 2vh;
+    font-weight: normal;
+    text-transform: lowercase;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#head div:nth-child(2) ul li:hover a {
+    color: var(--stringPink);
+    border-bottom: 1px solid var(--stringPink);
+}
+
+#head div:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+
+#head div:nth-child(2) ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+#head div:nth-child(2) ul li a {
+    color: black;
+}
+
 #introduce {
     font-family: 'Splash', cursive;
     font-size: 72px;
@@ -102,22 +140,4 @@ body {
 #aboutMeImg img {
     height: 50vh;
     border-radius: 5px;
-}
-#menu ul {
-    display: flex;
-    flex: 1;
-    gap: 2vw;
-}
-#menu ul li {
-    display: inline;
-}
-
-#menu ul li a {
-    color: black;
-    transition: 0.1s ease-in-out;
-}
-
-#menu ul li:hover a {
-    border-bottom: 1px solid var(--stringPink);
-    color: var(--stringPink);
 }
