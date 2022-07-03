@@ -38,6 +38,26 @@
         letter-spacing: 1vw!important;
         word-spacing: 1vw!important;
     }
+
+    .mainProjects div:nth-child(1) {
+        font-size: 15vw;
+    }
+
+    .mainProjects div:nth-child(2) {
+        font-size: 8vw;
+    }
+
+    .mainProjects div:nth-child(3) {
+        font-weight: lighter;
+    }
+
+    .mainProjects div:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .mainProjects div:nth-child(4) button{
+        width: 100%;
+    }
 }
 
 :root {
@@ -221,16 +241,16 @@ body {
 }
 
 .mainProjects div:nth-child(1) {
-    font-size: 6vw;
+    font-size: 72px;
     position: relative;
     top: 10px;
     z-index: 1;
 }
 
 .mainProjects div:nth-child(2) {
-    font-size: 4vw;
+    font-size: 64px;
     position: relative;
-    top: -70px;
+    top: -55px;
 }
 
 .mainProjects div:nth-child(3) {
@@ -242,7 +262,7 @@ body {
 }
 
 .mainProjects div:nth-child(4) button{
-    font-size: x-large;
+    font-size: 2vw;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
