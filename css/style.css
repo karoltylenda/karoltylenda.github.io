@@ -23,9 +23,21 @@
 @media only screen and (max-width: 568px){
     #head div:nth-child(1) {
         display: none;
-        padding: 1vw 1vh 1vw; /* top - left rigt - bottom */
     }
 
+    .mainIndex div:nth-child(1) {
+        font-size: 20vw;
+    }
+
+    .mainIndex div:nth-child(2) {
+        font-size: 12vw;
+    }
+
+    .mainIndex div:nth-child(3) {
+        font-size: 3vw;
+        letter-spacing: 1vw;
+        word-spacing: 1vw;
+    }
 }
 
 :root {
@@ -57,7 +69,12 @@ body {
     color: black;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
+    padding: 2vw;
+}
+
+.splashFont {
+    font-family: 'Splash', cursive;
+    color: #b91646;
 }
 
 #head {
@@ -75,8 +92,6 @@ body {
     font-size: 2vh;
     font-weight: normal;
     text-transform: lowercase;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 #head div:nth-child(2) ul li:hover a {
@@ -151,4 +166,22 @@ body {
 #aboutMeImg img {
     height: 50vh;
     border-radius: 5px;
+}
+
+#foot {
+    display: table-row;
+}
+
+.mainIndex div:nth-child(1) {
+    font-size: 10vw;
+}
+
+.mainIndex div:nth-child(2) {
+    font-size: 6vw;
+}
+
+.mainIndex div:nth-child(3) {
+    font-size: 1.5vw;
+    letter-spacing: 0.5vw;
+    word-spacing: 0.5vw;
 }
