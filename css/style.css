@@ -94,9 +94,14 @@ body {
     text-transform: lowercase;
 }
 
+#head div:nth-child(2) ul li a {
+    transition: all .3s ease-in-out;
+}
+
 #head div:nth-child(2) ul li:hover a {
     color: var(--stringPink);
     border-bottom: 1px solid var(--stringPink);
+    transform: scale(1.3);
 }
 
 #head div:nth-child(2) ul {
@@ -216,14 +221,38 @@ body {
 }
 
 .mainProjects div:nth-child(1) {
-    font-size: 8vw;
+    font-size: 6vw;
     position: relative;
     top: 10px;
     z-index: 1;
 }
 
 .mainProjects div:nth-child(2) {
-    font-size: 6vw;
+    font-size: 4vw;
     position: relative;
-    top: -60px;
+    top: -70px;
+}
+
+.mainProjects div:nth-child(3) {
+    font-weight: lighter;
+    position: relative;
+    top: -40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid black;
+}
+
+.mainProjects div:nth-child(4) button{
+    font-size: x-large;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+    padding: 0.5vw 3.5vw 0.5vw 3.5vw;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
 }
