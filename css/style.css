@@ -53,7 +53,6 @@
     }
 
     .mainProjects div:nth-child(3) {
-        /*font-weight: lighter;*/
         font-size: 12px!important;
     }
 
@@ -67,6 +66,10 @@
         font-size: 10vw;
         padding-bottom: 8px!important;
         padding-top: 8px!important;
+    }
+
+    button:hover {
+        transform: scale(1.1)!important;
     }
 }
 
@@ -172,6 +175,7 @@ body {
     white-space: nowrap;
     position: relative;
     top: -60px;
+    margin-bottom: 10px;
 }
 
 #imgContainer {
@@ -229,6 +233,7 @@ body {
 
 .mainIndex div:nth-child(3) {
     font-size: 24px;
+    font-weight: 200;
     letter-spacing: 5px;
     word-spacing: 10px;
     position: relative;
