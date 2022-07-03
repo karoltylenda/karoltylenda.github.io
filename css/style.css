@@ -26,17 +26,17 @@
     }
 
     .mainIndex div:nth-child(1) {
-        font-size: 20vw;
+        font-size: 18vw!important;
     }
 
     .mainIndex div:nth-child(2) {
-        font-size: 12vw;
+        font-size: 15vw!important;
     }
 
     .mainIndex div:nth-child(3) {
-        font-size: 3vw;
-        letter-spacing: 1vw;
-        word-spacing: 1vw;
+        font-size: 5vw!important;
+        letter-spacing: 1vw!important;
+        word-spacing: 1vw!important;
     }
 }
 
@@ -116,8 +116,7 @@ body {
 
 #main {
     display: table-cell;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    vertical-align: middle;
 }
 
 #introduce {
@@ -172,6 +171,15 @@ body {
     display: table-row;
 }
 
+#foot div div:nth-child(1) a{
+    color: black;
+    font-size: small;
+}
+
+#foot div div:nth-child(2) a{
+    font-size: xx-large;
+}
+
 .mainIndex div:nth-child(1) {
     font-size: 10vw;
 }
@@ -184,4 +192,23 @@ body {
     font-size: 1.5vw;
     letter-spacing: 0.5vw;
     word-spacing: 0.5vw;
+}
+
+.mainSkills {
+
+}
+
+.mainSkills div {
+
+}
+
+.mainSkills div div:nth-child(2) p {
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.iconSkills {
+    font-size: 72px;
+    color: black;
+    margin-top: 2vh;
 }
