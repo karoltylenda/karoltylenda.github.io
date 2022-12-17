@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -58,18 +61,27 @@
                 <div class="hero-shadow"></div>
                 <div class="hero-content">
                     <div class="container text-uppercase">
-                        <h1 class="text-center text-info">John<span></span>
-                            <span class="text-white">Malkovich</span>
+                        <h1 class="text-center text-info" data-aos="fade-down-right" data-aos-duration="800"
+                            data-aos-easing="ease-in-out">
+                            Karol<span></span>
+                            <span class="text-white">Tylenda</span>
                         </h1>
-                        <h5 class="fw-bold text-center">Creative developer</h5>
+                        <h5 class="fw-bold text-center" data-aos="fade-up-left" data-aos-duration="800"
+                            data-aos-easing="ease-in-out">Junior java
+                            developer</h5>
+
                     </div>
+                </div>
+                <div class="hero-chevron text-center w-100 display-6">
+                    <a href="#about"><i class="fa-solid fa-chevron-down heartbeat" id="chevron-down"></i></a>
                 </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container py-5">
-                <div class="card shadow border-0">
+                <div class="card shadow border-0" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">
                     <div class="row g-0">
                         <div class="col-md-4 p-3">
                             <img src="/img/pexels-jeswin-thomas-1549004-HD.jpg" class="img-fluid rounded" alt="...">
@@ -109,7 +121,7 @@
             <div class="container py-5">
                 <div class="row d-flex g-5 justify-content-center text-center">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card rounded-0 text-light bg-dark">
+                        <div class="card rounded-0 text-light bg-dark" data-aos="fade-up" data-aos-duration="800">
                             <img src="/img/logo-html5.png" class="card-img-top mx-auto my-3"
                                 alt="pomarańczowe logo html5">
                             <div class="card-body d-flex justify-content-center">
@@ -124,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card rounded-0 text-light bg-dark">
+                        <div class="card rounded-0 text-light bg-dark" data-aos="fade-up" data-aos-duration="800">
                             <img src="/img/logo-css3.png" class="card-img-top mx-auto my-3" alt="niebieskie logo css3">
                             <div class="card-body d-flex justify-content-center">
                                 <h5 class="fs-3 card-title mb-3">CSS</h5>
@@ -140,7 +152,7 @@
                 </div>
                 <div class="row d-flex g-5 mt-1 justify-content-center text-center">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card rounded-0 text-light bg-dark">
+                        <div class="card rounded-0 text-light bg-dark" data-aos="fade-up" data-aos-duration="800">
                             <img src="/img/logo-java.png" class="card-img-top mx-auto my-3" alt="białe logo JAVA">
                             <div class="card-body d-flex justify-content-center">
                                 <h5 class="fs-3 card-title mb-3">JAVA</h5>
@@ -153,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card rounded-0 text-light bg-dark">
+                        <div class="card rounded-0 text-light bg-dark" data-aos="fade-up" data-aos-duration="800">
                             <img src="/img/logo-js.png" class="card-img-top mx-auto my-3"
                                 alt="żółte logo javascript"></img>
                             <div class="card-body d-flex justify-content-center">
@@ -171,7 +183,7 @@
         </seection>
 
         <section class="py-5 px-1 bg-dark" id="portfolio">
-            <div class="container rounded-3 bg-black">
+            <div class="container rounded-3 bg-black" data-aos="fade-up" data-aos-duration="800">
                 <div class="row">
                     <div class="col-12 col-lg-5 order-2 order-lg-1 py-5 px-3">
                         <div class="hero-img">
@@ -233,7 +245,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/aos.js"></script>
 </body>
 
 </html>

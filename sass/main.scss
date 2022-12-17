@@ -190,6 +190,10 @@ h6 {
 			top: calc(50% - 68px);
 			transform: translateY(-50%);
 		}
+		.hero-chevron {
+			position: absolute;
+			bottom: 100px;
+		}
 	}
 }
 
@@ -270,3 +274,4 @@ h6 {
 @import './992px';
 @import './1200px';
 @import './1400px';
+@import './animate';
