@@ -29,12 +29,19 @@ h6 {
 	background-color: #000;
 }
 
-.bg-gray {
-	background-color: $gray;
+.section-title {
+	position: relative;
 }
 
-.bg-dark-gray {
-	background-color: $dark-gray;
+.section-title::before {
+	content: ' ';
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70%;
+	height: 2px;
+	background-color: var(--bs-info);
 }
 
 .navbar {
@@ -198,7 +205,7 @@ h6 {
 }
 
 #about {
-	background: linear-gradient(115deg, var(--bs-dark) 40%, #f0f0f0 40%);
+	background: linear-gradient(45deg, var(--bs-dark) 40%, #f0f0f0 40%);
 }
 
 #skills {

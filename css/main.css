@@ -68,12 +68,19 @@ h6 {
   background-color: #000;
 }
 
-.bg-gray {
-  background-color: #333333;
+.section-title {
+  position: relative;
 }
 
-.bg-dark-gray {
-  background-color: #0d0d0d;
+.section-title::before {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background-color: var(--bs-info);
 }
 
 .navbar {
@@ -229,7 +236,7 @@ h6 {
 }
 
 #about {
-  background: linear-gradient(115deg, var(--bs-dark) 40%, #f0f0f0 40%);
+  background: linear-gradient(45deg, var(--bs-dark) 40%, #f0f0f0 40%);
 }
 
 #skills .card {
@@ -308,6 +315,9 @@ h6 {
   html {
     scroll-padding-top: 55px;
   }
+  .section-title::before {
+    width: 50%;
+  }
   .navbar ul {
     font-size: 0.75em;
   }
@@ -327,6 +337,9 @@ h6 {
   }
 }
 @media (min-width: 992px) {
+  .section-title::before {
+    width: 30%;
+  }
   .navbar ul {
     font-size: 1em;
   }

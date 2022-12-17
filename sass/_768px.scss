@@ -5,6 +5,10 @@
 		scroll-padding-top: 55px;
 	}
 
+	.section-title::before {
+		width: 50%;
+	}
+
 	.navbar {
 		ul {
 			font-size: 0.75em;

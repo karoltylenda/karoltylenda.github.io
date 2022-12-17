@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+	.section-title::before {
+		width: 30%;
+	}
+
 	.navbar {
 		ul {
 			font-size: 1em;
