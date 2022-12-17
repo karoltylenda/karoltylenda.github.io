@@ -1,0 +1,20 @@
+@media (min-width: 992px) {
+	.navbar {
+		ul {
+			font-size: 1em;
+		}
+	}
+
+	#home {
+		.hero-img {
+			background-image: url('/img/astronaut-1784245_1920.jpg');
+		}
+	}
+
+	#portfolio {
+		.hero-img {
+			background-attachment: scroll;
+			height: 100%;
+		}
+	}
+}
