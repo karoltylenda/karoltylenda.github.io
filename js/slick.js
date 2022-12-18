@@ -1,8 +1,6 @@
 $(document).ready(function () {
 	$('.card-carousel').slick({
 		arrows: false,
-		centerMode: true,
-		centerPadding: '60px',
 		slidesToShow: 5,
 		autoPlaySpeed: 1500,
 		autoplay: true,
@@ -10,20 +8,20 @@ $(document).ready(function () {
 		infinite: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '40px',
 					slidesToShow: 3,
 				},
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 768,
 				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '40px',
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
 					slidesToShow: 1,
 				},
 			},
