@@ -90,16 +90,17 @@ h6 {
 			a {
 				position: relative;
 				padding: 0.5em 1em;
-				border: 1px solid var(--bs-info);
+				border: 2px solid var(--bs-info);
 				overflow: hidden;
 				z-index: 3;
-				transition: box-shadow 0.2s ease-in-out;
+				transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 				span {
 					position: relative;
 					z-index: 4;
 				}
 			}
 			a:hover {
+				color: var(--bs-info);
 				box-shadow: 0px 0px 100px -5px var(--bs-info);
 			}
 
@@ -284,7 +285,6 @@ h6 {
 			border: 1px solid #f0f0f0;
 			border-radius: 0;
 			background-color: #000;
-
 		}
 	}
 }
