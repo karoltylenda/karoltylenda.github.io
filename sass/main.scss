@@ -197,6 +197,13 @@ h6 {
 			position: relative;
 			top: calc(50% - 68px);
 			transform: translateY(-50%);
+			h1 {
+				letter-spacing: 15px;
+				word-spacing: 10px;
+			}
+			// h5 {
+			// 	letter-spacing: 5px;
+			// }
 		}
 		.hero-chevron {
 			position: absolute;

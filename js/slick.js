@@ -2,7 +2,7 @@ $(document).ready(function () {
 	$('.card-carousel').slick({
 		arrows: false,
 		slidesToShow: 5,
-		autoPlaySpeed: 1500,
+		autoPlaySpeed: 1000,
 		autoplay: true,
 		cssEase: 'ease-in-out',
 		infinite: true,

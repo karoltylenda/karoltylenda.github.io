@@ -231,6 +231,10 @@ h6 {
   top: calc(50% - 68px);
   transform: translateY(-50%);
 }
+#home .hero-img .hero-content h1 {
+  letter-spacing: 15px;
+  word-spacing: 10px;
+}
 #home .hero-img .hero-chevron {
   position: absolute;
   bottom: 150px;
