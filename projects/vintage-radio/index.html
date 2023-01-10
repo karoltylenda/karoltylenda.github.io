@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/37ef35aa2e.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Vintage Radio</title>
+</head>
+
+<body>
+    <div class="background-img kenburns-bottom-left">
+        <div class="background-shadow"></div>
+    </div>
+
+    <div class="menu-buttons-container">
+        <button class="btn rounded slide-in-blurred-right" id="user-btn"><i class="fa-solid fa-user"></i></button>
+        <button class="btn rounded d-lg-none slide-in-blurred-right" id="menu-btn" data-bs-toggle="collapse"
+            data-bs-target="#menu-collapse" aria-expanded="false" aria-controls="menu-collapse"><i
+                class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div id="menu-collapse">
+        <div class="menu-container p-0 m-0">
+            <ul class="menu p-lg-0 m-0 w-100" id="menu-list">
+                <li class="menu-item p-0 m-0">
+                    <button
+                        class="btn btn-white text-uppercase fw-bold px-4 py-2 border-0 border-lg-end rounded-0 w-100 text-start"
+                        id="receiving-btn">receiving</button>
+                </li>
+                <li class="menu-item p-0 m-0">
+                    <button
+                        class="btn btn-white text-uppercase fw-bold px-4 py-2 border-0 border-lg-end rounded-0 w-100 text-start"
+                        id="aboutUs-btn">About
+                        us</button>
+                </li>
+                <li class="menu-item p-0 m-0">
+                    <button
+                        class="btn btn-white text-uppercase fw-bold px-4 py-2 border-0 border-lg-end rounded-0 w-100 text-start"
+                        id="contact-btn">Contact</button>
+                </li>
+                <li class="menu-item p-0 m-0">
+                    <button class="btn btn-white text-uppercase fw-bold px-4 py-2 border-0 rounded-0 w-100 text-start"
+                        id="advertising-btn">advertising</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid w-100 p-0 overflow-auto content" id="receiving-content">
+        <div
+            class="container-fluid d-flex justify-content-between align-items-center w-100 border border-dark border-2 border-top-0 border-start-0 border-end-0 p-3 py-4">
+            <button class="btn rounded menu-back-btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <h2 class="text-uppercase fw-bold m-0">Receiving</h2>
+            <button class="btn rounded menu-close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="container-fluid">
+            <div class="player-boxes" id="collapseGroup">
+                <h2>This is how you can receive Vintage Radio</h2>
+                <div class="box">
+                    <div class="box-title">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>APPS</span>
+                    </div>
+                    <button class="btn-open-close-box" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#appsCollapse" aria-expanded="false" aria-controls="appsCollapse"><i
+                            class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="apps-box-content collapse" id="appsCollapse" data-bs-parent="#collapseGroup">
+                    <div class="container d-flex flex-column gap-3 m-0">
+                        <div class="container d-flex row m-0 p-0">
+                            <h5 class="text-uppercase fw-bolder">Mobile Apps</h5>
+                            <div class="d-flex flex-column flex-sm-row mb-3 gap-3"><img
+                                    class="img-responsive ms-0 me-auto mx-sm-0"
+                                    src="./img/Download_on_the_App_Store_Badge.svg.png"><img
+                                    class="img-responsive ms-0 me-auto mx-sm-0"
+                                    src="./img/Google_Play_Store_badge_EN.svg.png">
+                            </div>
+                        </div>
+                        <div class="container d-flex row m-0 p-0">
+                            <h5 class="text-uppercase fw-bolder">Apple TV</h5>
+                            <p class="text-wrap">Receive Vintage Radio 80s directly on Apple TV in the Vintage
+                                Radio tvOS app.</p>
+                        </div>
+                        <div class="container d-flex row m-0 p-0">
+                            <h5 class="text-uppercase fw-bolder">Apple Watch</h5>
+                            <p class="text-wrap">Install the Vintage Radio App on the iPhone and start the app
+                                with your Apple
+                                Watch. Or download the Vintage Radio app directly from the Apple Watch Store.
+                            </p>
+                        </div>
+                        <div class="container d-flex row m-0 p-0">
+                            <h5 class="text-uppercase fw-bolder">Car Play</h5>
+                            <p class="text-wrap">Install the Vintage Radio app on the iPhone and start the app
+                                with your system in
+                                the car.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Desktop</span>
+                    </div>
+                    <button class="btn-open-close-box" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#desktopCollapse" aria-expanded="false" aria-controls="desktopCollapse"><i
+                            class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="collapse desktop-box-content" id="desktopCollapse" data-bs-parent="#collapseGroup">
+                    <div class="container d-flex row m-0 p-0">
+                        <p class="text-wrap">Listen to vintage radio directly in your browser via the URL
+                            80s.vintageradio.ch. We recommend the latest version of Google Chrome.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-title">
+                        <i class="fa-solid fa-radio"></i>
+                        <span>Radio</span>
+                    </div>
+                    <button class="btn-open-close-box" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#radioCollapse" aria-expanded="false" aria-controls="radioCollapse"><i
+                            class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="collapse radio-box-content" id="radioCollapse" data-bs-parent="#collapseGroup">
+                    <div class="container d-flex row m-0 p-0">
+                        <p class="text-wrap">Listen to Vintage Radio 80s directly from your web radio. Use the
+                            following stream URLs:</p>
+                        <p class="text-break">128kbit/s: <a
+                                href="https://vintage80s.ice.infomaniak.ch/vintage80s-high.mp3"
+                                target="_blank">https://vintage80s.ice.infomaniak.ch/vintage80s-high.mp3</a>
+                        </p>
+                        <p class="text-break">64kbit/s: <a
+                                href="https://vintage80s.ice.infomaniak.ch/vintage80s-low.mp3"
+                                target="_blank">https://vintage80s.ice.infomaniak.ch/vintage80s-low.mp3</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-title">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <span>Smartspeaker</span>
+                    </div>
+                    <button class="btn-open-close-box" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#smartspeakerCollapse" aria-expanded="false"
+                        aria-controls="smartspeakerCollapse"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="collapse speaker-box-content" id="smartspeakerCollapse" data-bs-parent="#collapseGroup">
+                    <div class="container d-flex flex-column gap-3 m-0 p-0">
+                        <div class="container d-flex row">
+                            <h5 class="text-uppercase fw-bolder">Amazon Alexa</h5>
+                            <p class="text-break">Say: «Alexa, play Vintage Radio Switzerland».</p>
+                        </div>
+                        <div class="container d-flex row">
+                            <h5 class="text-uppercase fw-bolder">Google Home</h5>
+                            <p class="text-break">Say: «Hey Google, play vintageradio.ch».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid w-100 p-0 overflow-auto" id="aboutUs-content">
+        <div
+            class="container-fluid d-flex justify-content-between align-items-center w-100 border border-dark border-2 border-top-0 border-start-0 border-end-0 p-3 py-4">
+            <button class="btn rounded menu-back-btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <h2 class="text-uppercase fw-bold m-0">About us</h2>
+            <button class="btn rounded menu-close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="container-fluid px-4">
+            <div class="row">
+                <h6 class="fw-bold py-5">Swiss radio with the best songs from the 60s, 70s, 80s and 90s. Listen to
+                    oldies
+                    and
+                    pop classics
+                    that have written music history on online radio.</h6>
+            </div>
+            <div class="row mb-5">
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">Adress</h6>
+                    <p class="m-0 p-0">Energy Broadcast AG</p>
+                    <p class="m-0 p-0">Vintage Radio</p>
+                    <p class="m-0 p-0">Dufourstrasse 23</p>
+                    <p class="m-0 p-0">8008 Zürich</p>
+                    <p class="m-0 p-0">Tel. +41 44 250 90 90</p>
+                    <p class="m-0 p-0">Fax +41 44 250 90 01</p>
+                    <p class="m-0 p-0">Contact</p>
+                </div>
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">Additional</h6>
+                    <p class="m-0 p-0">Privacy and Competition Rules
+                        listenership</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">
+                        Program management
+                    </h6>
+                    <p class="m-0 p-0">Andy Studer</p>
+                </div>
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">
+                        Management
+                    </h6>
+                    <p class="m-0 p-0">Roger Spillmann</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">
+                        Communication via email
+                    </h6>
+                    <p class="m-0 p-0">Die Übermittlung von unverschlüsselten Daten per E-Mail ist weder sicher noch
+                        geeignet, um vertrauliche Informationen und personenbezogene Daten auszutauschen. Falls Sie ohne
+                        Sicherheitsvorkehrungen vertrauliche Informationen per E-Mail bekannt geben, sollten Sie sich
+                        auch darüber bewusst sein, dass allenfalls unberechtigte Dritte (z. B. Hacker) auf diese
+                        zugreifen und darin Einblick nehmen könnten. Sie sollten auch damit rechnen, dass unberechtigte
+                        Dritte ohne Ihr Einverständnis die von Ihnen übermittelten Informationen verfälschen und für
+                        eigene Zwecke nutzen. Die via E-Mail übermittelten Informationen könnten ferner ins Ausland
+                        gesandt werden. Dies kann selbst dann der Fall sein, wenn sich Absender und Empfänger in der
+                        Schweiz befinden. Aus diesem Grund müssen Sie auch damit rechnen, dass die via E-Mail
+                        übermittelten Informationen auch in ein Land transferiert werden könnten, in dem ein niedrigeres
+                        Datenschutzniveau als in der Schweiz vorhanden ist. Wenn Sie jedoch trotzdem mit uns via
+                        unverschlüsseltem E-Mail Kontakt aufnehmen und uns Anfragen stellen, gehen wir davon aus, dass
+                        wir Ihnen ebenfalls per unverschlüsseltem E-Mail antworten und die von Ihnen verlangten
+                        Informationen übermitteln dürfen.</p>
+                </div>
+                <div class="col-sm-6 mb-5 mb-sm-0">
+                    <h6 class="fw-bold">
+                        External links
+                    </h6>
+                    <p class="m-0 p-0">All texts and links have been carefully checked and are continuously updated. We
+                        make every effort to provide correct and complete information on this website, but assume no
+                        responsibility, guarantees or liability for the information provided through this website being
+                        correct, complete or up-to-date. We reserve the right to change the information on this website
+                        at any time and without prior notice and we do not undertake to update the information
+                        contained. All links to external providers were checked for correctness at the time of their
+                        inclusion, but we are not liable for the content and availability of websites that can be
+                        reached via hyperlinks. The provider of the page to which reference is made is solely liable for
+                        illegal, incorrect or incomplete content and in particular for damage caused by the content of
+                        linked pages. It does not matter whether the damage is of a direct, indirect or financial nature
+                        or whether there is any other damage that could result from data loss, loss of use or other
+                        reasons of any kind.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid w-100 p-0 overflow-auto" id="contact-content">
+        <div
+            class="container-fluid d-flex justify-content-between align-items-center w-100 border border-dark border-2 border-top-0 border-start-0 border-end-0 p-3 py-4">
+            <button class="btn rounded menu-back-btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <h2 class="text-uppercase fw-bold m-0">Contact</h2>
+            <button class="btn rounded menu-close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="container-fluid">
+            <div class="row px-3">
+                <h4 class="fw-bold pt-5 pb-3">Your request</h4>
+                <form>
+                    <label class="form-label fw-bold">Email address:</label>
+                    <input class="form-control" type="email">
+                    <label class="form-label fw-bold text-uppercase mt-3">SELECT SUBJECT</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio1" checked>
+                        <label class="form-check-label text-uppercase" for="flexRadio1">
+                            GENERAL QUESTIONS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio2">
+                        <label class="form-check-label text-uppercase" for="flexRadio2">
+                            ADVERTISING AND SPONSORSHIP
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio3">
+                        <label class="form-check-label text-uppercase" for="flexRadio3">
+                            Music Program
+                        </label>
+                    </div>
+                    <div class="mt-3">
+                        <label for="FormControlTextarea1" class="form-label fw-bold text-uppercase">YOUR MESSAGE</label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning text-uppercase">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid w-100 p-0 overflow-auto" id="advertising-content">
+        <div
+            class="container-fluid d-flex justify-content-between align-items-center w-100 border border-dark border-2 border-top-0 border-start-0 border-end-0 p-3 py-4">
+            <button class="btn rounded menu-back-btn" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+            <h2 class="text-uppercase fw-bold m-0">Advertising</h2>
+            <button class="btn rounded menu-close-btn" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="container-fluid px-4">
+            <div class="row">
+                <h6 class="fw-bold py-5">Advertising on Vintage Radio – far more than “just” radio spots</h6>
+                <p>Vintage Radio reaches 147,000 listeners* daily via the DAB+ network, the Vintage Radio app, the
+                    website and streaming. This gives the station the eighth-largest reach of all Swiss private radio
+                    stations.</p>
+                <p>Vintage Radio offers attractive, multimedia offers to present your company both on the station and
+                    visually to listeners throughout German-speaking Switzerland or locally.</p>
+                <p>Discover advertising opportunities and learn more about Vintage Radio.</p>
+                <p>We would be pleased to advise you individually! Feel free to contact us.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="logo-container scale-in-hor-center">
+        <h2>Vintage</h2>
+        <p>Radio</p>
+        <p>Songs Of Your Life</p>
+    </div>
+
+    <div class="player-container d-flex flex-column align-items-start gap-3 bg-light rounded p-3 scale-in-hor-center">
+        <div class="row">
+            <div class="col">
+                <div class="thumbnail">
+                    <img src="./img/googoodolls.jpeg" width="100" height="100">
+                </div>
+            </div>
+            <div class="col p-0 w-100 text-nowrap">
+                <div class="title d-flex align-items-baseline">
+                    <h1 class="display-4 fw-bold">Iris</h1>
+                    <span class="text-muted"><small>(1998)</small></span>
+                </div>
+                <h5 class="author">Goo Goo Dolls</h5>
+            </div>
+        </div>
+
+        <div class="row w-100 flex-nowrap justify-content-between me-5">
+            <div class="col d-flex align-items-center gap-2">
+                <button class="btn p-0" type="button">
+                    <i class="fa-solid fa-circle-play display-4"></i>
+                </button>
+                <span class="text-muted">PLAY</span>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center text-muted">
+                <span>3:23</span><span>/</span><span>4:56</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="links-container text-white">
+        <div class="social-links slide-in-blurred-right">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="more-radios slide-in-blurred-right"><a href="#" target="_blank"><i class="fa-solid fa-radio"></i>
+                <span>More Radios</span>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

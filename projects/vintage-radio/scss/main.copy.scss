@@ -1,0 +1,233 @@
+@import './reset';
+
+:root {
+	--montserrat: 'Montserrat', sans-serif;
+	--robotoCondesed: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	font-family: var(--montserrat);
+	height: 100vh;
+}
+
+.main {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	.background-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('/img/pexels-yuri-manei-2766408.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: calc(100vw + 100px);
+		height: 100vh;
+		z-index: -1001;
+		.background-shadow {
+			position: absolute;
+			top: 0;
+			left: 0px;
+			width: 100vw;
+			height: 100vh;
+			background: linear-gradient(115deg, rgba(240, 208, 111, 1) 25%, rgba(0, 0, 0, 0.4) 25%);
+			z-index: -1000;
+		}
+	}
+	.menu-buttons-container {
+		position: relative;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		gap: 10px;
+		top: 10px;
+		left: calc(100vw - 10px);
+		transform: translateX(-100%);
+		z-index: 400;
+		.btn {
+			width: 40px;
+			height: 40px;
+			background-color: black;
+			color: white;
+			transition: transform 0.2s ease-in-out;
+		}
+		.btn:hover {
+			transform: scale(1.2);
+		}
+	}
+	.menu-container {
+		position: absolute;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		white-space: nowrap;
+		overflow: scroll;
+		z-index: 500;
+		transition: width 0.2s ease-in-out;
+		overflow: hidden;
+		.btn {
+			width: 40px;
+			height: 40px;
+			background-color: black;
+			color: white;
+		}
+		#menu-close-btn {
+			position: absolute;
+			top: 10px;
+			left: calc(100vw - 10px);
+			transform: translateX(-100%);
+			z-index: 501;
+		}
+		.menu {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin: 0;
+			padding: 110px 0 0 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
+			list-style: none;
+
+			li {
+				width: 100vw;
+				border-top: 1px solid rgba(0, 0, 0, 0.1);
+				.btn {
+					width: auto;
+					height: auto;
+					color: black;
+					background-color: white;
+				}
+			}
+
+			li:nth-child(1) {
+				border-top: 2px solid black;
+			}
+		}
+		.menu-content-container {
+			position: fixed;
+			top: 0;
+			left: 100%;
+			transform: translateX(-100%);
+			width: 0px;
+			height: 100vh;
+			margin-bottom: 100px;
+			#menu-back-btn {
+				position: absolute;
+				top: 60px;
+				left: calc(100% - 10px);
+				transform: translateX(-100%);
+			}
+			.menu-content {
+				h1 {
+					position: absolute;
+					padding: 10px;
+					margin: 0;
+					top: 0;
+					height: 110px;
+					font-family: var(--robotoCondesed);
+					font-weight: 700;
+					text-align: center;
+					text-transform: uppercase;
+				}
+				
+			}
+		}
+	}
+
+	
+
+	// .menu-content {
+	// 	position: fixed;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	width: 0px;
+	// 	height: 100vh;
+	// 	left: 100%;
+	// 	transform: translateX(-100%);
+	// 	overflow: hidden;
+	// 	transition: width 0.3s ease-in-out;
+	// 	#menu-btn-close {
+	// 		position: absolute;
+	// 		width: 40px;
+	// 		height: 40px;
+	// 		top: 35px;
+	// 		left: 35px;
+	// 		color: white;
+	// 		background-color: black;
+	// 		transition: transform 0.2s ease-in-out;
+	// 	}
+	// 	#menu-btn-close:hover {
+	// 		transform: scale(1.2);
+	// 	}
+	// }
+	// .menu-content-active {
+	// 	width: 100%;
+	// 	z-index: 900;
+	// }
+
+	
+
+	.player-container {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 30px;
+		bottom: 75px;
+		left: 75px;
+		width: 450px;
+		border-radius: 10px;
+		background-color: white;
+		.title {
+			display: flex;
+			align-items: baseline;
+			gap: 5px;
+			h1 {
+				font-weight: 600;
+				letter-spacing: 3px;
+			}
+		}
+		.author {
+			margin-top: -25px;
+		}
+		.player-controls {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			div {
+				display: flex;
+				align-items: center;
+				i {
+					font-size: 48px;
+					cursor: pointer;
+					transition: transform 0.2s ease-in-out;
+				}
+				i:hover {
+					transform: scale(1.2);
+				}
+				span {
+					font-size: 14px;
+				}
+			}
+			div:first-of-type {
+				gap: 10px;
+			}
+		}
+	}
+}
+
+@import './576px';
+@import './768px';
+@import './992px';
+@import './1200px';
+@import './1400px';
+
+@import './animatings';
