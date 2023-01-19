@@ -240,7 +240,7 @@ body {
 
 .logo-container {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
 	display: flex;
 	flex-direction: column;
@@ -266,24 +266,21 @@ body {
 	font-family: 'Allura', cursive;
 	letter-spacing: 1px;
 }
-.logo-container p:first-of-type::before {
-	content: ' ';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 40px;
-	height: 2px;
-	background-color: black;
-}
+.logo-container p:first-of-type::before,
 .logo-container p:first-of-type::after {
 	content: ' ';
 	position: absolute;
 	top: 50%;
-	left: 100%;
-	transform: translateX(-100%);
-	width: 40px;
-	height: 2px;
+	width: 20%;
+	height: 1px;
 	background-color: black;
+}
+.logo-container p:first-of-type::before {
+	left: 0;
+}
+.logo-container p:first-of-type::after {
+	left: 100%;
+	transform: translate(-100%, -50%);
 }
 
 .player-container {
@@ -324,6 +321,43 @@ body {
 .more-radios span {
 	font-size: 16px;
 	text-transform: uppercase;
+}
+
+.navbar .container-xxl .navbar-brand .logo-container {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.navbar .container-xxl .navbar-brand .logo-container h2 {
+	font-size: smaller;
+}
+.navbar .container-xxl .navbar-brand .logo-container p {
+	font-size: xx-small;
+}
+.navbar .container-xxl .navbar-brand .logo-container p:last-of-type {
+	display: none;
+}
+
+.hr-line {
+	position: relative;
+}
+
+.hr-line::before,
+.hr-line::after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	width: 35%;
+	height: 1px;
+	background-color: gray;
+}
+
+.hr-line::before {
+	left: 1em;
+}
+
+.hr-line::after {
+	right: 1em;
 }
 
 @media (min-width: 576px) {

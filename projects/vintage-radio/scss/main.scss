@@ -29,7 +29,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url('/img/pexels-yuri-manei-2766408.jpg');
+	background: url('../img/pexels-yuri-manei-2766408.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -206,7 +206,7 @@ body {
 
 .logo-container {
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: 20px;
 	display: flex;
 	flex-direction: column;
@@ -231,24 +231,22 @@ body {
 		font-family: 'Allura', cursive;
 		letter-spacing: 1px;
 	}
-	p:first-of-type::before {
-		content: ' ';
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 40px;
-		height: 2px;
-		background-color: black;
-	}
+
+	p:first-of-type::before,
 	p:first-of-type::after {
 		content: ' ';
 		position: absolute;
 		top: 50%;
-		left: 100%;
-		transform: translateX(-100%);
-		width: 40px;
-		height: 2px;
+		width: 20%;
+		height: 1px;
 		background-color: black;
+	}
+	p:first-of-type::before {
+		left: 0;
+	}
+	p:first-of-type::after {
+		left: 100%;
+		transform: translate(-100%, -50%);
 	}
 }
 
@@ -294,10 +292,11 @@ body {
 	}
 }
 
+@import './login';
+
 @import './576px';
 @import './768px';
 @import './992px';
 @import './1200px';
 @import './1400px';
-
 @import './animatings';

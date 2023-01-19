@@ -1,0 +1,39 @@
+.navbar {
+	.container-xxl {
+		// max-width: 1400px;
+		.navbar-brand {
+			.logo-container {
+				position: relative;
+				top: 0;
+				left: 0;
+				h2 {
+					font-size: smaller;
+				}
+				p {
+					font-size: xx-small;
+				}
+				p:last-of-type {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.hr-line {
+	position: relative;
+}
+.hr-line::before,
+.hr-line::after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	width: 35%;
+	height: 1px;
+	background-color: gray;
+}
+.hr-line::before {
+	left: 1em;
+}
+.hr-line::after {
+	right: 1em;
+}
