@@ -1,0 +1,1 @@
+{"version":3,"sources":["../bulma/sass/layout/section.scss","../bulma/sass/utilities/css-variables.scss","section.css","../bulma/sass/utilities/mixins.scss"],"names":[],"mappings":"AASA;EC6BE,oCAAA;EAAA,0CAAA;EAAA,2CAAA;EAAA,yCAAA;EDpBA,qCAAA;AEZF;ACgTE;EH7SF;IAaI,6CAAA;EEZF;EFeE;IACE,4CAAA;EEbJ;EFgBE;IACE,2CAAA;EEdJ;AACF;AFiBE;EACE,iBAAA;AEfJ","file":"section.css"}

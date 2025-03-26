@@ -27,7 +27,8 @@ The website is built using the following technologies:
 
 ├── index.html
 ├── css/
-│   └── style.css
+│   └── main.css  
+│   └── main.css.map 
 ├── js/
 │   └── script.js
 ├── images/

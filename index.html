@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light" id="htmlTag">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PixelPrintShop</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
     </head>
-    <body></body>
+    <body>
+        <div class="theme-wrapper mt-3 mr-3">
+            <button class="button is-transparent" id="themeBtn" onclick="toggleDarkMode()"><span class="material-symbols-outlined is-size-6 has-text-warning" id="spanTheme"> light_mode </span></button>
+        </div>
+        <section class="hero is-fullheight">
+            <div class="hero-body is-flex-direction-column is-flex-grow-0 my-auto">
+                <div class="container has-text-centered">
+                    <h1 class="bytesized-regular has-text-success tracking-in-expand">PixelPrintShop</h1>
+                </div>
+                <div class="container has-text-centered mt-3">
+                    <p class="has-text-weight-light is-size-6-mobile is-size-4-tablet">This site is</p>
+                    <p class="is-uppercase has-text-weight-bold is-size-4-mobile is-size-3-tablet">under construction</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>All rights reserved</p>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
