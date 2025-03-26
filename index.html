@@ -7,25 +7,162 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <script src="https://kit.fontawesome.com/37ef35aa2e.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="is-family-monospace">
         <div class="theme-wrapper mt-3 mr-3">
             <button class="button is-transparent" id="themeBtn" onclick="toggleDarkMode()"><span class="material-symbols-outlined is-size-6 has-text-warning" id="spanTheme"> light_mode </span></button>
         </div>
         <section class="hero is-fullheight">
             <div class="hero-body is-flex-direction-column is-flex-grow-0 my-auto">
                 <div class="container has-text-centered">
-                    <h1 class="bytesized-regular has-text-success tracking-in-expand">PixelPrintShop</h1>
+                    <h1 class="bytesized-regular tracking-in-expand"><span class="has-text-link">Pixel</span><span class="has-text-link">Print</span><span class="has-text-primary">Shop</span></h1>
                 </div>
-                <div class="container has-text-centered mt-3">
-                    <p class="has-text-weight-light is-size-6-mobile is-size-4-tablet">This site is</p>
-                    <p class="is-uppercase has-text-weight-bold is-size-4-mobile is-size-3-tablet">under construction</p>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                    <div class="is-flex mr-3">
+                        <span class="material-symbols-outlined" style="font-size: 5rem"> handyman </span>
+                    </div>
+                    <div class="has-text-weight-bold is-size-4">
+                        <p class="my-0">under</p>
+                        <p class="my-0">construction</p>
+                    </div>
                 </div>
             </div>
         </section>
         <footer class="footer">
-            <div class="content has-text-centered">
-                <p>All rights reserved</p>
+            <div class="container">
+                <div class="fixed-grid has-2-cols has-1-cols-mobile is-size-7">
+                    <div class="grid">
+                        <div class="cell card is-align-content-space-around is-radiusless">
+                            <div class="card-header is-shadowless">
+                                <div class="card-header-title is-size-6">PixelPrintShop</div>
+                            </div>
+                            <div class="card-content">
+                                <div class="content is-flex is-align-items-center is-gap-1 mb-3">
+                                    <span class="material-symbols-outlined has-text-primary"> home_pin </span>
+                                    <span>01-001 Warsaw, Poland</span>
+                                </div>
+                                <div class="content is-flex is-align-items-center is-gap-1 mb-3">
+                                    <span class="material-symbols-outlined has-text-primary"> phone_in_talk </span>
+                                    <span>+48 123 456 789</span>
+                                </div>
+                                <div class="content is-flex is-align-items-center is-gap-1">
+                                    <span class="material-symbols-outlined has-text-primary"> alternate_email </span>
+                                    <span>info@pixelprintshop.pl</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <form action="">
+                                <div class="is-flex is-gap-1">
+                                    <div class="field is-flex-grow-1">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input is-small is-radiusless" type="text" placeholder="First name" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fa-solid fa-font"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field is-flex-grow-1">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input is-small is-radiusless" type="text" placeholder="Last name" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fa-solid fa-font"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="is-flex is-gap-1">
+                                    <div class="field is-flex-grow-1">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input is-small is-radiusless" type="email" placeholder="E-mail e.g. john.doe@example.com" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field is-flex-grow-1">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input is-small is-radiusless" type="text" placeholder="Phone e.g. +48 123 123 123" />
+                                            <span class="icon is-small is-left">
+                                                <i class="fa-solid fa-phone"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="is-flex is-gap-1">
+                                    <div class="field is-flex-grow-1">
+                                        <p class="control">
+                                            <input class="input is-small is-radiusless" type="text" placeholder="Subject" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="is-flex mt-3">
+                                    <div class="field is-flex-grow-1">
+                                        <div class="control">
+                                            <textarea class="textarea is-small is-radiusless" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="is-flex is-justify-content-end mt-3">
+                                    <div class="field">
+                                        <div class="control">
+                                            <button class="button is-small is-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed-grid has-1-cols-mobile has-2-cols-tablet mt-6 pt-3" style="border-top: 1px solid var(--bulma-dark)">
+                <div class="container grid">
+                    <div class="cell mx-auto my-auto">
+                        <div class="is-flex is-align-items-center is-gap-1">
+                            <a href="#" class="has-text-link is-size-7">Privacy policy</a>
+                            <i class="fa-solid fa-circle-dot" style="font-size: 0.25rem"></i>
+                            <a href="#" class="has-text-link is-size-7">Terms and conditions</a>
+                        </div>
+                    </div>
+                    <div class="cell mx-auto">
+                        <div class="is-flex is-align-items-center is-justify-content-center is-gap-1">
+                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-meta">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z" />
+                                    <path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 11v5" />
+                                    <path d="M8 8v.01" />
+                                    <path d="M12 16v-5" />
+                                    <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+                                    <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                    <path d="M16.5 7.5v.01" />
+                                </svg>
+                            </a>
+                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="./js/script.js"></script>

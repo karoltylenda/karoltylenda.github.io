@@ -30,3 +30,15 @@ body {
         }
     }
 }
+
+footer {
+    form {
+        .input,
+        .textarea {
+            border: none;
+            -webkit-box-shadow: var(--bulma-shadow);
+            -moz-box-shadow: var(--bulma-shadow);
+            box-shadow: var(--bulma-shadow);
+        }
+    }
+}

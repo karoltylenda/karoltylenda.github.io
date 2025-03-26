@@ -55,4 +55,10 @@ body .theme-wrapper {
 }
 body .theme-wrapper button {
   border: none;
+}
+
+footer form .input,
+footer form .textarea {
+  border: none;
+  box-shadow: var(--bulma-shadow);
 }/*# sourceMappingURL=main.css.map */
