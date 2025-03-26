@@ -1,0 +1,37 @@
+.bd-websites {
+  --gap: 0px;
+  --width: 672px;
+  --spacing: 1.5rem;
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(2 * (var(--width) + var(--spacing)) + 3 * var(--gap));
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+
+.bd-website {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(2 * var(--width));
+  padding-bottom: var(--spacing);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.bd-website:hover {
+  background-color: var(--expo-light);
+}
+.bd-website:hover .title {
+  color: var(--expo-dark);
+}
+.bd-website:hover .bd-website-date {
+  color: var(--bulma-text-strong);
+}
+.bd-website.bd-is-highlighted {
+  grid-column: span 2;
+}/*# sourceMappingURL=expo.css.map */
