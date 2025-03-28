@@ -10,9 +10,34 @@
         <script src="https://kit.fontawesome.com/37ef35aa2e.js" crossorigin="anonymous"></script>
     </head>
     <body class="is-family-monospace">
-        <div class="theme-wrapper mt-3 mr-3">
-            <button class="button is-transparent" id="themeBtn" onclick="toggleDarkMode()"><span class="material-symbols-outlined is-size-6 has-text-warning" id="spanTheme"> light_mode </span></button>
-        </div>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item">
+                    <i class="fa-solid fa-shop"></i>
+                </a>
+                <div class="navbar-item ml-3" id="darkModeButton">
+                    <a class="button" onclick="toggleDarkMode()">
+                        <span class="material-symbols-outlined has-text-warning" id="darkModeSpan"> light_mode </span>
+                    </a>
+                </div>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu m-2" id="navMenu">
+                <div class="navbar-end is-uppercase">
+                    <a href="#" class="navbar-item">Home</a>
+                    <a href="#" class="navbar-item">About</a>
+                    <a href="#" class="navbar-item">Services</a>
+                    <a href="#" class="navbar-item">Offer</a>
+                    <a href="#" class="navbar-item">Contact</a>
+                </div>
+            </div>
+        </nav>
+
         <section class="hero is-fullheight">
             <div class="hero-body is-flex-direction-column is-flex-grow-0 my-auto">
                 <div class="container has-text-centered">
@@ -29,6 +54,7 @@
                 </div>
             </div>
         </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="fixed-grid has-2-cols has-1-cols-mobile is-size-7">

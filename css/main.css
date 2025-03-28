@@ -27,7 +27,7 @@
   }
 }
 .bytesized-regular {
-  font-family: "Bytesized", sans-serif;
+  font-family: "Bytesized", sans-serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 12dvw;
@@ -43,22 +43,23 @@
   }
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-}
-body .theme-wrapper {
-  position: fixed;
+body nav {
+  position: fixed !important;
   top: 0;
-  right: 0;
-  z-index: 1000;
+  left: 50%;
+  width: 100%;
+  max-width: 1400px;
+  transform: translateX(-50%);
 }
-body .theme-wrapper button {
-  border: none;
+body nav .navbar-menu .navbar-end .navbar-item {
+  transition: all 0.2s ease;
 }
-
-footer form .input,
-footer form .textarea {
+body nav .navbar-menu .navbar-end .navbar-item:hover {
+  color: var(--bulma-link) !important;
+  transform: scale(1.1);
+}
+body footer form .input,
+body footer form .textarea {
   border: none;
   box-shadow: var(--bulma-shadow);
 }/*# sourceMappingURL=main.css.map */
