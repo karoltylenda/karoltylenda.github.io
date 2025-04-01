@@ -58,6 +58,46 @@ body nav .navbar-menu .navbar-end .navbar-item:hover {
   color: var(--bulma-link) !important;
   transform: scale(1.1);
 }
+body #servicesSection {
+  margin-top: 10rem;
+}
+body #servicesSection div .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+body #servicesSection div .card-container .card {
+  margin-bottom: 0;
+  flex-basis: calc(33.33% - 1.5rem);
+  flex-grow: 1;
+  transition: transform 0.2s ease-in;
+}
+body #servicesSection div .card-container .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #servicesSection div .card-container .card .card-content i {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+body #servicesSection div .card-container .card .card-content .content {
+  font-family: var(--bulma-family-primary);
+}
+body #servicesSection div .card-container .card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 992px) {
+  body #servicesSection div .card-container .card {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+@media (max-width: 576px) {
+  body #servicesSection div .card-container .card {
+    flex-basis: 100%;
+  }
+}
 body footer form .input,
 body footer form .textarea {
   border: none;
