@@ -1,3 +1,56 @@
+@charset "UTF-8";
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+}
+.brand-logo__main {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.brand-logo .i-square {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+.brand-logo .i-square::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  background-color: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.9);
+  border-radius: 1px;
+}
+.brand-logo .i-square::before {
+  content: "ı";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+.brand-logo__sub {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8b5cf6;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -15,17 +68,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.navbar__logo {
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.navbar__logo span {
-  color: #8b5cf6;
 }
 .navbar__links {
   display: flex;
@@ -637,16 +679,6 @@ body {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-}
-.footer__brand .logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.footer__brand .logo span {
-  color: #8b5cf6;
 }
 .footer__brand p {
   color: #94a3b8;

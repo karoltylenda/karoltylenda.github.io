@@ -1,0 +1,68 @@
+// scss/_logo.scss
+
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    line-height: 1; // Ściśnięte linie dla zwartego efektu
+    cursor: pointer;
+
+    // Główny napis "PIXEL PRINT"
+    &__main {
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        position: relative;
+        display: flex; // Żeby 'i' było w linii
+        align-items: baseline;
+    }
+
+    // Magiczny kwadrat zamiast kropki nad 'i'
+    .i-square {
+        position: relative;
+        display: inline-block;
+
+        // Ukrywamy prawdziwą literę 'i'
+        color: transparent;
+
+        // Tworzymy kwadrat za pomocą pseudoelementu
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0; // Dostosuj, jeśli kwadrat jest za wysoko/nisko
+            left: 50%;
+            transform: translateX(-50%);
+
+            // ROZMIAR I KOLOR KWADRATU
+            width: 7px;
+            height: 7px;
+            background-color: $color-primary; // Fiolet
+
+            // EFEKT ŚWIECENIA (GLOW)
+            box-shadow: 0 0 12px rgba($color-primary, 0.9);
+            border-radius: 1px; // Minimalne zaokrąglenie dla realizmu
+        }
+        // Odtwarzamy dolną część litery 'i' (bez kropki)
+        &::before {
+            content: "ı"; // Litera 'i' bez kropki
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+        }
+    }
+
+    // Mały napis "SHOP" pod spodem
+    &__sub {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: $color-primary; // Fioletowy kolor
+        text-transform: uppercase;
+        letter-spacing: 0.35em; // Bardzo szeroki rozstaw
+        margin-top: 4px;
+        margin-left: 2px; // Lekka korekta optyczna
+    }
+}

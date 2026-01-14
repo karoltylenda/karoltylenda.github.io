@@ -20,19 +20,6 @@
         align-items: center;
     }
 
-    &__logo {
-        font-size: 1.3rem;
-        font-weight: 900;
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-
-        span {
-            color: $color-primary;
-        }
-    }
-
     &__links {
         display: flex;
         gap: 40px;

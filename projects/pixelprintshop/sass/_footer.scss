@@ -19,17 +19,6 @@
     }
 
     &__brand {
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            span {
-                color: $color-primary;
-            }
-        }
-
         p {
             color: $color-text-muted;
             max-width: 400px;
