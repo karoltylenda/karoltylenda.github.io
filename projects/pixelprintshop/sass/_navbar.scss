@@ -1,0 +1,101 @@
+// scss/_navbar.scss
+
+.navbar {
+    position: fixed; // Navbar zawsze na górze
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: $transition;
+
+    // EFEKT SZKŁA (Glassmorphism)
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 1.3rem;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        @include tablet {
+            display: none;
+        } // Ukrywamy na mobilkach (do zrobienia hamburger)
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: $transition;
+            position: relative;
+
+            // Subtelna kreska pod linkiem na hover
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: $color-primary;
+                transition: $transition;
+            }
+
+            &:hover {
+                color: white;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__actions {
+        .btn-nav {
+            text-decoration: none;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 10px 24px;
+            border: 1px solid rgba($color-primary, 0.5);
+            transition: $transition;
+            border-radius: 0; // OSTRE ROGI
+
+            &:hover {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                box-shadow: 0 0 20px rgba($color-primary, 0.4);
+            }
+        }
+    }
+}
+
+// Padding dla body, żeby Hero nie wchodziło pod navbar
+body {
+    padding-top: 80px;
+}

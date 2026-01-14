@@ -1,0 +1,157 @@
+// scss/_contact.scss - WERSJA INVERTED (LIGHT)
+
+.contact {
+    padding: 120px 0;
+    background-color: #ffffff; // Uderzająca biel
+    color: #050505; // Głęboka czerń tekstu
+    position: relative;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 100px;
+        align-items: start;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        color: #050505;
+
+        span {
+            color: $color-primary;
+            // Na białym tle możemy dodać subtelniejszy gradient
+            background: linear-gradient(90deg, $color-primary, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__lead {
+        color: #4b5563; // Ciemniejszy szary dla czytelności na białym
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+    }
+
+    &__details {
+        .contact-item {
+            margin-bottom: 30px;
+
+            small {
+                display: block;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: $color-primary;
+                font-weight: 800;
+                font-size: 0.7rem;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #050505;
+            }
+        }
+    }
+
+    // FORMULARZ W STYLU STERYLNYM
+    &__form {
+        background: #f9fafb; // Bardzo jasny szary/biel
+        padding: 50px;
+        border: 2px solid #050505; // Grubsza, czarna, ostra ramka
+        position: relative;
+        box-shadow: 20px 20px 0px $color-primary; // Stylizowany "luksusowy" cień
+
+        @include mobile {
+            padding: 30px;
+            box-shadow: 10px 10px 0px $color-primary;
+        }
+
+        &::before {
+            content: "INPUT REQUIRED";
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.6rem;
+            color: #050505;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: 30px;
+
+    label {
+        display: block;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #050505;
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1); // Ciemniejsza linia
+        padding: 12px 0;
+        color: #050505;
+        font-family: $font-main;
+        font-size: 1rem;
+        transition: $transition;
+        border-radius: 0;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom-color: $color-primary;
+            // Delikatny fioletowy odblask pod spodem
+            background: linear-gradient(
+                to top,
+                rgba($color-primary, 0.03),
+                transparent
+            );
+        }
+    }
+
+    select {
+        cursor: pointer;
+        option {
+            background: white;
+            color: black;
+        }
+    }
+}
+
+// Przycisk w wersji Inverted
+.contact .btn--primary {
+    background-color: #050505;
+    border-color: #050505;
+    color: white;
+
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba($color-primary, 0.3);
+    }
+}
