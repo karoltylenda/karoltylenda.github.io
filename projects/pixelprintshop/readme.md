@@ -1,75 +1,70 @@
-### 📄 README.md
+# 📠 PixelPrintShop | Enterprise Printing Solutions
 
-```markdown
-# 📠 PixelPrintShop | Platforma Wynajmu Technologii Enterprise
-
-![Status: Ogólnopolski](https://img.shields.io/badge/Zasi%C4%99g-Og%C3%B3lnopolski-blueviolet)
-![Tech: SCSS](https://img.shields.io/badge/Style-SCSS-bf4080)
+![Zasięg: Ogólnopolski](https://img.shields.io/badge/Zasi%C4%99g-Og%C3%B3lnopolski-A855F7)
+![Standard: Premium](https://img.shields.io/badge/Standard-Premium-000000)
 ![UI: Cyber--Noir](https://img.shields.io/badge/Design-Cyber--Noir-black)
 
 ## 🚀 O Projekcie
-PixelPrintShop to luksusowa witryna typu showcase dla ogólnopolskiego dostawcy systemów druku klasy Premium. Projekt łączy estetykę **cyber-noir** z wysoką wydajnością i intuicyjną nawigacją. Strona została zaprojektowana, aby budować autorytet marki z 20-letnim stażem na rynku ogólnopolskim.
+PixelPrintShop to nowoczesna platforma typu showcase dla ogólnopolskiego dostawcy systemów druku klasy Enterprise. Witryna została zaprojektowana w estetyce **Cyber-Noir**, łącząc mroczny, luksusowy design z zaawansowaną interaktywnością.
 
 ## 🛠️ Stack Techniczny
-- **HTML5**: Semantyczna struktura.
-- **SCSS (Sass)**: Zaawansowana architektura stylów (modułowa).
-- **JavaScript (ES6+)**: Autorski system wielokrotnego filtrowania produktów.
-- **AOS (Animate On Scroll)**: System płynnych animacji wejścia.
-- **DALL-E 3**: Autorskie grafiki produktowe w klimacie high-tech.
+- **HTML5**: Semantyczna struktura SEO-friendly.
+- **SCSS**: Modułowa architektura stylów (BEM methodology).
+- **JavaScript**: Autorski silnik wielokrotnego filtrowania produktów.
+- **AOS.js**: Biblioteka animacji typu scroll-triggered.
+- **DALL-E 3**: System generowania fotorealistycznych grafik produktowych.
 
-## 📂 Struktura Projektu
+## 📂 Struktura Plików
 ```text
 /pixelprintshop
-├── index.html          # Główny plik strukturalny
-├── css/                # Skompilowane pliki CSS
-│   └── main.css        # Plik wynikowy (nie edytuj bezpośrednio!)
-├── scss/               # Źródła stylów (Edytuj tutaj)
-│   ├── main.scss       # Importy i konfiguracja
-│   ├── _variables.scss # Kolory, fonty, timingi
-│   ├── _hero.scss      # Sekcja nagłówkowa
-│   ├── _catalog.scss   # Konfigurator floty i filtry
-│   ├── _pricing.scss   # Sekcja "Cyber-Void"
-│   ├── _trust.scss     # Social Proof (Logotypy)
-│   ├── _contact.scss   # Formularz z mikro-interakcjami
-│   └── _footer.scss    # Stopka z systemem statusu
-├── img/                # Zasoby graficzne i ikony
-└── js/                 # Skrypty
+├── index.html          # Główny plik strony
+├── css/
+│   └── main.css        # Skompilowane style (wynikowy)
+├── scss/               # Pliki źródłowe SASS
+│   ├── main.scss       # Główny plik importów
+│   ├── _variables.scss # Zmienne (kolory, czcionki)
+│   ├── _hero.scss      # Sekcja powitalna
+│   ├── _trust.scss     # Pasek zaufania (logotypy branż)
+│   ├── _catalog.scss   # Konfigurator floty i system filtrów
+│   ├── _pricing.scss   # Sekcja "Cyber-Void" (Pakiety)
+│   ├── _workflow.scss  # Protokół wdrożenia
+│   ├── _features.scss  # Siatka bento (doświadczenie)
+│   ├── _contact.scss   # Formularz z laserowymi polami
+│   └── _footer.scss    # Stopka z pulsującym statusem
+├── img/                # Grafiki maszyn i ikony
+└── js/                 # Skrypty sterujące (filtrowanie)
+⚙️ Instrukcja Deweloperska
+Kompilacja Stylów
+Aby edytować wygląd strony, modyfikuj pliki w folderze scss/, a następnie skompiluj je do folderu css/. Jeśli używasz SASS CLI:
 
-```
-
-## ⚙️ Instalacja i Rozwój
-
-### 1. Kompilacja Stylów
-
-Projekt korzysta z procesora SASS. Aby śledzić zmiany i automatycznie kompilować CSS, użyj komendy:
-
-```bash
+Bash
 sass --watch scss/main.scss:css/main.css
+Konfiguracja Produktów
+Produkty w katalogu są filtrowane na podstawie klas CSS przypisanych do elementu .device-card. Przykład poprawnej konfiguracji:
 
-```
+konica, kyocera - Filtry producenta
 
-### 2. Konfiguracja Kolorystyki
+a3, a4 - Filtry formatu
 
-Główny akcent kolorystyczny (fioletowy laser) można zmienić globalnie w pliku `scss/_variables.scss`:
+color, mono - Filtry kolorystyki
 
-```scss
-$color-primary: #A855F7;
+mfp, printer - Filtry typu urządzenia
 
-```
+Kluczowe Funkcjonalności UX
+Laser Focus: Pola formularza w sekcji kontaktowej aktywują fioletową linię laserową przy użyciu pseudoelementów i selektora :focus-within.
 
-### 3. Zarządzanie Katalogiem
+Dynamiczne Filtrowanie: Skrypt JS w czasie rzeczywistym zarządza widocznością kart produktów bez przeładowania strony.
 
-Urządzenia w katalogu sterowane są za pomocą klas CSS. Aby filtr działał poprawnie, każda karta `.device-card` powinna posiadać klasy odpowiadające atrybutom `data-filter` w panelu filtrów (np. `konica`, `a3`, `color`).
+Pulsing Status Indicator: W stopce znajduje się wskaźnik gotowości operacyjnej (Live Status) z animacją pulsującego światła.
 
-## ✨ Kluczowe Funkcjonalności UX
+Logistyka 24H: Cała treść strony została zoptymalizowana pod kątem przekazu ogólnopolskiego.
 
-* **Laserowe Pola Formularza**: Animowane pseudoelementy `::after` reagujące na `:focus-within`.
-* **Multifiltracja**: Skrypt JS umożliwiający jednoczesne filtrowanie po producencie i parametrach technicznych.
-* **Pulsing Live Status**: Animacja SVG w stopce sygnalizująca gotowość operacyjną 24/7.
-* **Cyber-Noir Imagery**: Specjalnie generowane grafiki z oświetleniem typu *rim-light* i *underglow*.
+🎨 Design Guide
+Primary Color: #A855F7 (Fioletowy Laser)
 
-## 📄 Licencja
+Background: #050505 (Głęboka Czerń)
 
-Projekt autorski dla marki PixelPrintShop. Wszystkie prawa zastrzeżone © 2026.
+Typography: Inter (Wagi: 400, 600, 700, 800, 900)
 
-```
+📄 Prawa Autorskie
+Projekt stworzony dla marki PixelPrintShop. Wszystkie prawa zastrzeżone © 2026.
