@@ -3,10 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PixelPrintShop | Wynajem Drukarek Suwałki</title>
+        <title>PixelPrintShop | Ogólnopolski Wynajem Systemów Druku Premium</title>
+        <meta name="description" content="20 lat doświadczenia w dostarczaniu technologii druku klasy Enterprise. Ogólnopolski wynajem kserokopiarek i drukarek Premium. Gwarancja serwisu i ciągłości pracy." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><rect x='25' y='25' width='50' height='50' fill='%23A855F7' rx='8'/><rect x='25' y='25' width='50' height='50' fill='none' stroke='%23A855F7' stroke-width='10' opacity='0.3'><animate attributeName='stroke-width' values='10;20;10' dur='2s' repeatCount='indefinite'/></rect></svg>"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
@@ -18,8 +25,9 @@
                 </a>
 
                 <ul class="navbar__links">
-                    <li><a href="#wynajem">Wynajem</a></li>
-                    <li><a href="#serwis">Serwis</a></li>
+                    <li><a href="#katalog">Katalog</a></li>
+                    <li><a href="#oferta">Cennik</a></li>
+                    <li><a href="#proces">Protokół</a></li>
                     <li><a href="#o-nas">O nas</a></li>
                 </ul>
 
@@ -31,128 +39,284 @@
 
         <section class="hero">
             <div class="container hero__container">
-                <div class="hero__content">
+                <div class="hero__content" data-aos="fade-right">
                     <h1 class="hero__title">
-                        Twoje biuro bez przestojów.
-                        <span>Wynajem drukarek premium.</span>
+                        Drukarki, które
+                        <span>Definiują Prestiż.</span>
                     </h1>
-                    <p class="hero__description">Specjalistyczny serwis i wynajem <strong>Kyocera, Konica Minolta i Canon</strong>. 20 lat doświadczenia na rynku w Suwałkach.</p>
+                    <p class="hero__description">Od dwóch dekad redefiniujemy standardy druku profesjonalnego. PixelPrintShop to ogólnopolski dostawca technologii klasy Enterprise, gwarantujący absolutną ciągłość Twojego biznesu.</p>
                     <div class="hero__actions">
-                        <a href="#" class="btn btn--primary">Sprawdź ofertę</a>
-                        <a href="#" class="btn btn--outline">Bezpłatna wycena</a>
+                        <a href="#katalog" class="btn btn--primary">Zobacz Katalog</a>
+                        <a href="#oferta" class="btn btn--outline">Sprawdź Pakiety</a>
                     </div>
                 </div>
-
-                <div class="hero__image-wrapper"><img src="img/C301i_gemini_generated.png" alt="" class="hero__image" /></div>
+                <div class="hero__image-wrapper" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="img/C301i_gemini_generated.png" alt="Konica Minolta bizhub" class="hero__image" />
+                </div>
             </div>
         </section>
-
-        <section class="catalog" id="wynajem">
+        <section class="trust">
             <div class="container">
-                <div class="catalog__header">
-                    <h2 class="catalog__title">Urządzenia <span>Premium</span></h2>
-                    <p class="catalog__subtitle">Najwyższa precyzja druku dla Twojego biznesu.</p>
+                <div class="trust__wrapper" data-aos="fade-up">
+                    <span class="trust__label">Zaufali nam liderzy branż:</span>
+                    <div class="trust__logos">
+                        <div class="trust__logo">LOGISTYKA</div>
+                        <div class="trust__logo">FINANSE</div>
+                        <div class="trust__logo">PRODUKCJA</div>
+                        <div class="trust__logo">E-COMMERCE</div>
+                        <div class="trust__logo">ARCHITEKTURA</div>
+                        <div class="trust__logo">MEDICAL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="katalog">
+            <div class="container">
+                <div class="catalog__header" data-aos="fade-up">
+                    <h2 class="catalog__title">Konfigurator <span>Floty</span></h2>
+                    <p class="catalog__subtitle">Dobierz technologię idealnie pod swój biznes</p>
                 </div>
 
-                <div class="catalog__grid">
-                    <div class="device-card">
-                        <div class="device-card__image-box">
-                            <img src="img/C301i_gemini_generated.png" alt="Konica Minolta bizhub C301i" />
-                        </div>
-                        <div class="device-card__content">
-                            <span class="device-card__tag">Nowość</span>
-                            <h3 class="device-card__model">Konica Minolta bizhub C301i</h3>
-                            <div class="device-card__specs">
-                                <div class="spec"><span>30 str./min</span></div>
-                                <div class="spec"><span>Format A3/A4</span></div>
-                            </div>
-                            <a href="#" class="btn btn--outline btn--full">Szczegóły</a>
+                <div class="filter-panel" data-aos="fade-up">
+                    <div class="filter-group">
+                        <span class="filter-group__label">Producent</span>
+                        <div class="filter-options" data-filter-group="brand">
+                            <button class="filter-btn active" data-filter="all">Wszyscy</button>
+                            <button class="filter-btn" data-filter="konica">Konica Minolta</button>
+                            <button class="filter-btn" data-filter="kyocera">Kyocera</button>
                         </div>
                     </div>
 
-                    <div class="device-card">
-                        <div class="device-card__image-box">
-                            <img src="img/C301i_gemini_generated.png" alt="Kyocera TASKalfa" />
+                    <div class="filter-group">
+                        <span class="filter-group__label">Format / Typ</span>
+                        <div class="filter-options" data-filter-group="spec">
+                            <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                            <button class="filter-btn" data-filter="a3">Format A3</button>
+                            <button class="filter-btn" data-filter="a4">Format A4</button>
+                            <button class="filter-btn" data-filter="color">Kolorowe</button>
+                            <button class="filter-btn" data-filter="mono">Monochromatyczne</button>
                         </div>
+                    </div>
+                </div>
+
+                <div class="catalog__grid" id="catalog-grid">
+                    <div class="device-card konica a3 color mfp" data-aos="fade-up">
+                        <div class="device-card__badge">A3 / Kolor / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_konicaminolta_c301i.png" alt="Konica Minolta C301i Series" /></div>
                         <div class="device-card__content">
-                            <span class="device-card__tag">Niezawodność</span>
-                            <h3 class="device-card__model">Kyocera TASKalfa 4054ci</h3>
+                            <span class="device-card__tag">Konica Minolta i-Series</span>
+                            <h3 class="device-card__model">bizhub C251i / C301i / C361i</h3>
                             <div class="device-card__specs">
-                                <div class="spec"><span>40 str./min</span></div>
-                                <div class="spec"><span>Kolor Premium</span></div>
+                                <div class="spec"><span>25-36 str./min</span></div>
+                                <div class="spec"><span>Dual-Scan 200 obr.</span></div>
                             </div>
-                            <a href="#" class="btn btn--outline btn--full">Szczegóły</a>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
                         </div>
                     </div>
 
-                    <div class="device-card">
-                        <div class="device-card__image-box">
-                            <img src="img/C301i_gemini_generated.png" alt="Canon iR-ADV" />
-                        </div>
+                    <div class="device-card konica a4 color mfp" data-aos="fade-up" data-aos-delay="100">
+                        <div class="device-card__badge">A4 / Kolor / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_C3351i.png" alt="Konica Minolta C3351i" /></div>
                         <div class="device-card__content">
-                            <span class="device-card__tag">Wydajność</span>
-                            <h3 class="device-card__model">Canon iR-ADV C5840i</h3>
+                            <span class="device-card__tag">Konica Minolta i-Series</span>
+                            <h3 class="device-card__model">bizhub C3351i / C3321i</h3>
                             <div class="device-card__specs">
-                                <div class="spec"><span>40 str./min</span></div>
-                                <div class="spec"><span>Cloud Ready</span></div>
+                                <div class="spec"><span>33 str./min</span></div>
+                                <div class="spec"><span>Ekran 10.1"</span></div>
                             </div>
-                            <a href="#" class="btn btn--outline btn--full">Szczegóły</a>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
+                        </div>
+                    </div>
+
+                    <div class="device-card kyocera a3 color mfp" data-aos="fade-up" data-aos-delay="200">
+                        <div class="device-card__badge">A3 / Kolor / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_MZ2501i.png" alt="Kyocera TASKalfa MZ Series" /></div>
+                        <div class="device-card__content">
+                            <span class="device-card__tag">Kyocera TASKalfa</span>
+                            <h3 class="device-card__model">MZ2501ci / MZ3501ci</h3>
+                            <div class="device-card__specs">
+                                <div class="spec"><span>25-35 str./min</span></div>
+                                <div class="spec"><span>Nowa Seria MZ</span></div>
+                            </div>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
+                        </div>
+                    </div>
+
+                    <div class="device-card kyocera a3 color mfp" data-aos="fade-up">
+                        <div class="device-card__badge">A3 / Kolor / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_kyocera_4054ci.png" alt="Kyocera TASKalfa 4054ci" /></div>
+                        <div class="device-card__content">
+                            <span class="device-card__tag">Kyocera TASKalfa</span>
+                            <h3 class="device-card__model">2554ci / 4054ci</h3>
+                            <div class="device-card__specs">
+                                <div class="spec"><span>25-40 str./min</span></div>
+                                <div class="spec"><span>AI Tech Inside</span></div>
+                            </div>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
+                        </div>
+                    </div>
+
+                    <div class="device-card kyocera a4 color mfp" data-aos="fade-up" data-aos-delay="100">
+                        <div class="device-card__badge">A4 / Kolor / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_MA4500cix.png  " alt="Kyocera MA4000cix" /></div>
+                        <div class="device-card__content">
+                            <span class="device-card__tag">Kyocera ECOSYS</span>
+                            <h3 class="device-card__model">MA3500cix / MA4000cix</h3>
+                            <div class="device-card__specs">
+                                <div class="spec"><span>35-40 str./min</span></div>
+                                <div class="spec"><span>HyPAS Solution</span></div>
+                            </div>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
+                        </div>
+                    </div>
+
+                    <div class="device-card kyocera a4 mono mfp" data-aos="fade-up" data-aos-delay="200">
+                        <div class="device-card__badge">A4 / Mono / MFP</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_MA5500ifx.png" alt="Kyocera MA5500ifx" /></div>
+                        <div class="device-card__content">
+                            <span class="device-card__tag">Kyocera ECOSYS</span>
+                            <h3 class="device-card__model">MA4500ifx / MA5500ifx</h3>
+                            <div class="device-card__specs">
+                                <div class="spec"><span>45-55 str./min</span></div>
+                                <div class="spec"><span>Wysoki Nakład</span></div>
+                            </div>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
+                        </div>
+                    </div>
+
+                    <div class="device-card kyocera a4 mono printer" data-aos="fade-up">
+                        <div class="device-card__badge">A4 / Mono / Drukarka</div>
+                        <div class="device-card__image-box"><img src="img/Gemini_Generated_Image_PA4500x.png" alt="Kyocera PA5500x" /></div>
+                        <div class="device-card__content">
+                            <span class="device-card__tag">Kyocera ECOSYS</span>
+                            <h3 class="device-card__model">PA4500x / PA5500x</h3>
+                            <div class="device-card__specs">
+                                <div class="spec"><span>45-55 str./min</span></div>
+                                <div class="spec"><span>Najniższy koszt druku</span></div>
+                            </div>
+                            <a href="#kontakt" class="btn btn--outline btn--full">Zapytaj o wynajem</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="features">
+
+        <section class="pricing" id="oferta" data-aos="fade-up">
+            <div class="container">
+                <div class="pricing__header">
+                    <h2 class="pricing__title">Klasy <span>Wydajności</span></h2>
+                    <p class="pricing__subtitle">Dopasuj moc do tempa Twojej firmy.</p>
+                </div>
+
+                <div class="pricing__grid">
+                    <div class="price-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="price-card__tier">Smart Series</div>
+                        <div class="price-card__price">od <span>99 zł</span> / mc</div>
+                        <ul class="price-card__list">
+                            <li>Formaty A4 Color / Mono</li>
+                            <li>Dla zespołów do 5 osób</li>
+                            <li>Skanowanie do Chmury</li>
+                            <li class="disabled">Format A3</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn--outline btn--full">Konfiguruj</a>
+                    </div>
+
+                    <div class="price-card price-card--featured" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="price-card__badge">Najczęściej wybierany</div>
+                        <div class="price-card__tier">Business Core</div>
+                        <div class="price-card__price">od <span>189 zł</span> / mc</div>
+                        <ul class="price-card__list">
+                            <li>Pełny Format A3 + A4</li>
+                            <li>Wydajność do 30 str./min</li>
+                            <li>Serwis Lokalny < 4h</li>
+                            <li>Pierwsze 500 kopii 0 zł</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn--primary btn--full">Wybierz Standard</a>
+                    </div>
+
+                    <div class="price-card" data-aos="fade-left" data-aos-delay="200">
+                        <div class="price-card__tier">Enterprise Max</div>
+                        <div class="price-card__price">od <span>349 zł</span> / mc</div>
+                        <ul class="price-card__list">
+                            <li>Produkcja A3+ i SRA3</li>
+                            <li>Prędkość 50+ str./min</li>
+                            <li>Indywidualny Opiekun IT</li>
+                            <li>Najniższy koszt kopii</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn--outline btn--full">Kontakt Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow" id="proces">
+            <div class="container">
+                <div class="workflow__header" data-aos="fade-right">
+                    <h2 class="workflow__title">Protokół <span>Wdrożenia</span></h2>
+                    <p class="workflow__subtitle">Ciągłość druku w czterech krokach.</p>
+                </div>
+                <div class="workflow__steps">
+                    <div class="step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step__number">01</div>
+                        <h3 class="step__title">Audyt</h3>
+                        <p class="step__text">Analizujemy potrzeby Twojego biura.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step__number">02</div>
+                        <h3 class="step__title">Setup IT</h3>
+                        <p class="step__text">Konfigurujemy system pod Twój zespół.</p>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="500">
+                        <div class="step__number">03</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Wdrożenie 24H</h3>
+                            <p class="step__text">Logistyka Express na terenie całego kraju. Gwarantujemy dostawę i pełną konfigurację sprzętu w dowolnej lokalizacji w Polsce.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="700">
+                        <div class="step__number">04</div>
+                        <h3 class="step__title">Opieka</h3>
+                        <p class="step__text">Reakcja serwisu zawsze poniżej 4h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="o-nas">
             <div class="container">
                 <div class="features__grid">
-                    <div class="feature-card feature-card--large">
-                        <div class="feature-card__content">
-                            <span class="feature-card__number">20</span>
-                            <h3 class="feature-card__title">Lat na rynku w Suwałkach</h3>
-                            <p class="feature-card__text">Dwa dekady dostarczania niezawodnych rozwiązań druku. Znamy każdą śrubkę w Twojej maszynie.</p>
-                        </div>
+                    <div class="feature-card feature-card--large" data-aos="fade-up">
+                        <span class="feature-card__number">20</span>
+                        <h3 class="feature-card__title">Lat Doświadczenia</h3>
+                        <p class="feature-card__text">Dwie dekady budowania standardów druku w Polsce.</p>
                         <div class="feature-card__icon">✦</div>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="feature-card__content">
-                            <h3 class="feature-card__title">Serwis <br /><span>w 4h</span></h3>
-                            <p class="feature-card__text">Przestój to strata. Reagujemy natychmiast, bo działamy lokalnie.</p>
-                        </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="feature-card__title">Serwis <span>w 4h</span></h3>
+                        <p class="feature-card__text">Działamy błyskawicznie, bo jesteśmy blisko.</p>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="feature-card__content">
-                            <h3 class="feature-card__title">0 zł <span>na start</span></h3>
-                            <p class="feature-card__text">Wynajem bez ukrytych opłat. Płacisz tylko za to, co faktycznie wydrukujesz.</p>
-                        </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="feature-card__title">0 zł <span>start</span></h3>
+                        <p class="feature-card__text">Wynajem bez ukrytych opłat początkowych.</p>
                     </div>
-
-                    <div class="feature-card feature-card--wide">
-                        <div class="feature-card__content">
-                            <h3 class="feature-card__title">Flota urządzeń <span>Next-Gen</span></h3>
-                            <p class="feature-card__text">Tylko najnowsze modele Konica Minolta i Kyocera z pełnym wsparciem IT i chmury.</p>
-                        </div>
+                    <div class="feature-card feature-card--wide" data-aos="fade-up">
+                        <h3 class="feature-card__title">Technologia <span>Next-Gen</span></h3>
+                        <p class="feature-card__text">Tylko najnowsze modele z pełnym wsparciem IT.</p>
                         <div class="feature-card__badge">AI Ready</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact" id="kontakt">
+
+        <section class="contact" id="kontakt" data-aos="fade-up">
             <div class="container">
                 <div class="contact__grid">
                     <div class="contact__info">
                         <h2 class="contact__title">Gotowy na <span>Nowy Standard?</span></h2>
-                        <p class="contact__lead">Skonfiguruj wynajem lub zamów serwis. Odpowiadamy w czasie rzeczywistym.</p>
-
                         <div class="contact__details">
                             <div class="contact-item">
                                 <small>Lokalizacja</small>
                                 <p>Suwałki, Polska</p>
-                            </div>
-                            <div class="contact-item">
-                                <small>Telefon Serwisowy</small>
-                                <p>+48 123 456 789</p>
                             </div>
                             <div class="contact-item">
                                 <small>E-mail</small>
@@ -160,77 +324,72 @@
                             </div>
                         </div>
                     </div>
-
                     <form class="contact__form">
                         <div class="form-group">
-                            <label>Identyfikator / Imię i Nazwisko</label>
+                            <label>Imię i Nazwisko</label>
                             <input type="text" placeholder="WPISZ DANE..." required />
                         </div>
-
                         <div class="form-group">
-                            <label>Kanał zwrotny / E-mail</label>
+                            <label>E-mail</label>
                             <input type="email" placeholder="EMAIL@ADRES.PL" required />
                         </div>
-
                         <div class="form-group">
-                            <label>Typ zgłoszenia</label>
-                            <select>
-                                <option>WYNAJEM URZĄDZENIA</option>
-                                <option>SERWIS / NAPRAWA</option>
-                                <option>ZAPYTANIE OGÓLNE</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Specyfikacja / Wiadomość</label>
+                            <label>Wiadomość</label>
                             <textarea rows="4" placeholder="OPISZ TWOJE POTRZEBY..."></textarea>
                         </div>
-
                         <button type="submit" class="btn btn--primary btn--full">INICJUJ POŁĄCZENIE</button>
                     </form>
                 </div>
             </div>
         </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__grid">
-                    <div class="footer__brand">
+                    <div class="footer__brand" data-aos="fade-up">
                         <div class="brand-logo">
                             <div class="brand-logo__main">P<span class="i-square">i</span>xel Print</div>
                             <div class="brand-logo__sub">Shop</div>
                         </div>
-                        <p>Twoje centrum nowoczesnego druku w Suwałkach. 20 lat doświadczenia, tysiące wydruków, zero kompromisów.</p>
+                        <p class="footer__description">Ogólnopolski standard druku klasy Premium. Od 20 lat dostarczamy niezawodną technologię Enterprise dla liderów rynku w całej Polsce.</p>
+                        <div class="footer__status"><span class="status-dot"></span> Logistyka & Serwis: CAŁA POLSKA</div>
                     </div>
 
-                    <div class="footer__nav">
+                    <div class="footer__nav" data-aos="fade-up" data-aos-delay="200">
                         <div class="footer__col">
-                            <h4>Oferta</h4>
+                            <h4>Rozwiązania</h4>
                             <ul>
-                                <li><a href="#">Wynajem</a></li>
-                                <li><a href="#">Serwis</a></li>
-                                <li><a href="#">Sprzedaż</a></li>
+                                <li><a href="#katalog">Katalog Maszyn</a></li>
+                                <li><a href="#oferta">Pakiety Wynajmu</a></li>
+                                <li><a href="#proces">Protokół Wdrożenia</a></li>
                             </ul>
                         </div>
                         <div class="footer__col">
                             <h4>Firma</h4>
                             <ul>
-                                <li><a href="#">O nas</a></li>
-                                <li><a href="#">Realizacje</a></li>
-                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#o-nas">O marce</a></li>
+                                <li><a href="#kontakt">Kontakt</a></li>
+                                <li><a href="#">Polityka Prywatności</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="footer__bottom">
-                    <p>&copy; 2026 PixelPrintShop. Wszelkie prawa zastrzeżone.</p>
-                    <div class="footer__legal">
-                        <a href="#">Polityka prywatności</a>
-                        <span>|</span>
-                        <a href="#">Regulamin</a>
-                    </div>
+                    <div class="footer__copyright">&copy; 2026 PixelPrintShop. Wszystkie prawa zastrzeżone.</div>
+                    <div class="footer__tech-partner">Standard: Enterprise 4.0</div>
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 200,
+                easing: "ease-out-cubic",
+            });
+        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>

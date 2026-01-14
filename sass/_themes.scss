@@ -1,0 +1,323 @@
+$tropic-energy: (
+    "primary": #00c9a7,
+    "secondary": #c80064,
+    "accent": #f4d35e,
+    "neutral-light": #f8f9fa,
+    "neutral-dark": #212529,
+    "background": #f8f9fa,
+    "text": #212529,
+    "text-light": #f8f9fa,
+    "border": #00c9a7,
+    "btn-primary-bg": #00c9a7,
+    "btn-primary-text": #f8f9fa,
+    "btn-secondary-bg": #f8f9fa,
+    "btn-secondary-text": #212529,
+    "btn-accent-bg": #c80064,
+    "btn-accent-text": #f8f9fa,
+    "btn-outline-primary-color": #00c9a7,
+    "btn-outline-accent-color": #c80064,
+    "btn-ghost-primary-color": #00c9a7,
+    "btn-ghost-accent-color": #c80064,
+);
+
+$deep-space: (
+    "primary": #4a148c,
+    "secondary": #00acc1,
+    "accent": #eaa221,
+    "neutral-light": #eceff1,
+    "neutral-dark": #1a1a1a,
+    "background": #eceff1,
+    "text": #1a1a1a,
+    "text-light": #eceff1,
+    "border": #4a148c,
+    "btn-primary-bg": #4a148c,
+    "btn-primary-text": #eceff1,
+    "btn-secondary-bg": #eceff1,
+    "btn-secondary-text": #1a1a1a,
+    "btn-accent-bg": #eaa221,
+    "btn-accent-text": #1a1a1a,
+    "btn-outline-primary-color": #4a148c,
+    "btn-outline-accent-color": #eaa221,
+    "btn-ghost-primary-color": #4a148c,
+    "btn-ghost-accent-color": #eaa221,
+);
+
+$deep-space-soft: (
+    "primary": #7b4ca5,
+    "secondary": #4dd0e1,
+    "accent": #f2be5c,
+    "neutral-light": #f5f7f9,
+    "neutral-dark": #2e2e2e,
+    "background": #f5f7f9,
+    "text": #2e2e2e,
+    "text-light": #f5f7f9,
+    "border": #7b4ca5,
+    "btn-primary-bg": #7b4ca5,
+    "btn-primary-text": #f5f7f9,
+    "btn-secondary-bg": #f5f7f9,
+    "btn-secondary-text": #2e2e2e,
+    "btn-accent-bg": #4dd0e1,
+    "btn-accent-text": #2e2e2e,
+    "btn-outline-primary-color": #7b4ca5,
+    "btn-outline-accent-color": #4dd0e1,
+    "btn-ghost-primary-color": #7b4ca5,
+    "btn-ghost-accent-color": #4dd0e1,
+);
+
+$neon-accent: (
+    "primary": #a3e635,
+    "secondary": #3b82f6,
+    "accent": #1e3a8a,
+    "neutral-light": #f9fafb,
+    "neutral-dark": #111827,
+    "background": #111827,
+    "text": #f9fafb,
+    "text-light": #f9fafb,
+    "border": #a3e635,
+    "btn-primary-bg": #a3e635,
+    "btn-primary-text": #111827,
+    "btn-secondary-bg": #f9fafb,
+    "btn-secondary-text": #111827,
+    "btn-accent-bg": #3b82f6,
+    "btn-accent-text": #f9fafb,
+    "btn-outline-primary-color": #a3e635,
+    "btn-outline-accent-color": #3b82f6,
+    "btn-ghost-primary-color": #a3e635,
+    "btn-ghost-accent-color": #3b82f6,
+);
+
+$forest-vibes: (
+    "primary": #386641,
+    "secondary": #6a994e,
+    "accent": #a7c957,
+    "neutral-light": #f2e8cf,
+    "neutral-dark": #1a181b,
+    "background": #f2e8cf,
+    "text": #1a181b,
+    "text-light": #f2e8cf,
+    "border": #386641,
+    "btn-primary-bg": #6a994e,
+    "btn-primary-text": #f2e8cf,
+    "btn-secondary-bg": #f2e8cf,
+    "btn-secondary-text": #1a181b,
+    "btn-accent-bg": #a7c957,
+    "btn-accent-text": #1a181b,
+    "btn-outline-primary-color": #6a994e,
+    "btn-outline-accent-color": #a7c957,
+    "btn-ghost-primary-color": #6a994e,
+    "btn-ghost-accent-color": #a7c957,
+);
+
+$ocean-breeze: (
+    "primary": #29abe2,
+    "secondary": #70cbf0,
+    "accent": #034078,
+    "neutral-light": #e0f2f7,
+    "neutral-dark": #212121,
+    "background": #e0f2f7,
+    "text": #212121,
+    "text-light": #e0f2f7,
+    "border": #29abe2,
+    "btn-primary-bg": #29abe2,
+    "btn-primary-text": #e0f2f7,
+    "btn-secondary-bg": #e0f2f7,
+    "btn-secondary-text": #212121,
+    "btn-accent-bg": #034078,
+    "btn-accent-text": #e0f2f7,
+    "btn-outline-primary-color": #29abe2,
+    "btn-outline-accent-color": #034078,
+    "btn-ghost-primary-color": #29abe2,
+    "btn-ghost-accent-color": #034078,
+);
+
+$sunset-glow: (
+    "primary": #ff8c42,
+    "secondary": #ffb347,
+    "accent": #dc2f02,
+    "neutral-light": #fff3d6,
+    "neutral-dark": #33272a,
+    "background": #fff3d6,
+    "text": #33272a,
+    "text-light": #fff3d6,
+    "border": #ff8c42,
+    "btn-primary-bg": #ff8c42,
+    "btn-primary-text": #33272a,
+    "btn-secondary-bg": #fff3d6,
+    "btn-secondary-text": #33272a,
+    "btn-accent-bg": #dc2f02,
+    "btn-accent-text": #fff3d6,
+    "btn-outline-primary-color": #ff8c42,
+    "btn-outline-accent-color": #dc2f02,
+    "btn-ghost-primary-color": #ff8c42,
+    "btn-ghost-accent-color": #dc2f02,
+);
+
+$retro-wave: (
+    "primary": #ff69b4,
+    "secondary": #00ced1,
+    "accent": #8a2be2,
+    "neutral-light": #f0f8ff,
+    "neutral-dark": #1e1e1e,
+    "background": #1e1e1e,
+    "text": #f0f8ff,
+    "text-light": #f0f8ff,
+    "border": #ff69b4,
+    "btn-primary-bg": #ff69b4,
+    "btn-primary-text": #1e1e1e,
+    "btn-secondary-bg": #00ced1,
+    "btn-secondary-text": #1e1e1e,
+    "btn-accent-bg": #8a2be2,
+    "btn-accent-text": #f0f8ff,
+    "btn-outline-primary-color": #ff69b4,
+    "btn-outline-accent-color": #8a2be2,
+    "btn-ghost-primary-color": #ff69b4,
+    "btn-ghost-accent-color": #8a2be2,
+);
+
+$monochrome-blue: (
+    "primary": #37474f,
+    "secondary": #607d8b,
+    "accent": #03a9f4,
+    "neutral-light": #eceff1,
+    "neutral-dark": #263238,
+    "background": #eceff1,
+    "text": #263238,
+    "text-light": #eceff1,
+    "border": #37474f,
+    "btn-primary-bg": #37474f,
+    "btn-primary-text": #eceff1,
+    "btn-secondary-bg": #eceff1,
+    "btn-secondary-text": #263238,
+    "btn-accent-bg": #03a9f4,
+);
+
+$custom-theme: (
+    "primary": #7b4ca5,
+    "secondary": #f2be5c,
+    "accent": #4dd0e1,
+    "neutral-light": #f9fafb,
+    "neutral-dark": #2d3748,
+    "background": #f9fafb,
+    "text": #2d3748,
+    "text-light": #ffffff,
+    "border": #7b4ca5,
+    "btn-primary-bg": #7b4ca5,
+    "btn-primary-text": #f5f7f9,
+    "btn-secondary-bg": #f2be5c,
+    "btn-secondary-text": #2e2e2e,
+    "btn-accent-bg": #4dd0e1,
+    "btn-accent-text": #2e2e2e,
+    "btn-outline-primary-color": #7b4ca5,
+    "btn-outline-accent-color": #4dd0e1,
+    "btn-ghost-primary-color": #7b4ca5,
+    "btn-ghost-accent-color": #4dd0e1,
+);
+
+$sunrise-serenity: (
+    "primary": #5a9bd8,
+    "secondary": #f5f5dc,
+    "accent": \#afeeee,
+    "neutral-light": #f5f9ff,
+    "neutral-dark": #2d3748,
+    "background": #f5f9ff,
+    "text": #2d3748,
+    "text-light": #ffffff,
+    "border": #5a9bd8,
+    "btn-primary-bg": #5a9bd8,
+    "btn-primary-text": #ffffff,
+    "btn-secondary-bg": #f08080,
+    "btn-secondary-text": #ffffff,
+    "btn-accent-bg": #eee8aa,
+    "btn-accent-text": #2d3748,
+    "btn-outline-primary-color": #5a9bd8,
+    "btn-outline-accent-color": #eee8aa,
+    "btn-ghost-primary-color": #5a9bd8,
+    "btn-ghost-accent-color": #eee8aa,
+);
+
+$dark-citrus: (
+    "primary": #14213d,
+    "secondary": #e5e5e5,
+    "accent": #fca311,
+    "neutral-light": #e5e5e5,
+    "neutral-dark": #000000,
+    "background": #ffffff,
+    "background-secondary": #e5e5e5,
+    "text": #000000,
+    "text-secondary": #14213d,
+    "text-light": #ffffff,
+    "border": #14213d,
+    "link": #14213d,
+    "link-hover": darken(#14213d, 15%),
+    "link-visited": darken(#e5e5e5, 30%),
+    "focus": #fca311,
+    "error": #ff4136,
+    "success": #2ecc40,
+    "btn-primary-bg": #14213d,
+    "btn-primary-text": #ffffff,
+    "btn-secondary-bg": #e5e5e5,
+    "btn-secondary-text": #000000,
+    "btn-accent-bg": #fca311,
+    "btn-accent-text": #000000,
+    "btn-outline-primary-color": #14213d,
+    "btn-outline-accent-color": #fca311,
+    "btn-ghost-primary-color": #14213d,
+    "btn-ghost-accent-color": #fca311,
+);
+
+// Variable to keep track of the active theme
+// Uncomment the theme you want to use by default
+
+// $active-theme: "tropic-energy";
+// $active-theme: "deep-space";
+// $active-theme: "deep-space-soft";
+// $active-theme: "neon-accent";
+// $active-theme: "custom-theme";
+// $active-theme: "forest-vibes";
+// $active-theme: "ocean-breeze";
+// $active-theme: "sunset-glow";
+// $active-theme: "retro-wave";
+// $active-theme: "monochrome-blue";
+// $active-theme: "sunrise-serenity";
+$active-theme: "dark-citrus";
+
+// Function to get the color based on the active theme
+@function color($key) {
+    $theme-map: null;
+
+    @if $active-theme == "tropic-energy" {
+        $theme-map: $tropic-energy;
+    } @else if $active-theme == "deep-space" {
+        $theme-map: $deep-space;
+    } @else if $active-theme == "deep-space-soft" {
+        $theme-map: $deep-space-soft;
+    } @else if $active-theme == "neon-accent" {
+        $theme-map: $neon-accent;
+    } @else if $active-theme == "custom-theme" {
+        $theme-map: $custom-theme;
+    } @else if $active-theme == "forest-vibes" {
+        $theme-map: $forest-vibes;
+    } @else if $active-theme == "ocean-breeze" {
+        $theme-map: $ocean-breeze;
+    } @else if $active-theme == "sunset-glow" {
+        $theme-map: $sunset-glow;
+    } @else if $active-theme == "retro-wave" {
+        $theme-map: $retro-wave;
+    } @else if $active-theme == "monochrome-blue" {
+        $theme-map: $monochrome-blue;
+    } @else if $active-theme == "sunrise-serenity" {
+        $theme-map: $sunrise-serenity;
+    } @else if $active-theme == "dark-citrus" {
+        $theme-map: $dark-citrus;
+    } @else {
+        @warn "Unrecognized theme: #{$active-theme}. 'tropic-energy' is used as default theme.";
+        $theme-map: $tropic-energy;
+    }
+
+    @if map-has-key($theme-map, $key) {
+        @return map-get($theme-map, $key);
+    } @else {
+        @warn "Key '#{$key}' doesn't exist in theme '#{$active-theme}'.";
+        @return null;
+    }
+}
