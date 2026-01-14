@@ -1,0 +1,107 @@
+// scss/_footer.scss
+
+.footer {
+    padding: 80px 0 40px;
+    background-color: #050505;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 80px;
+        margin-bottom: 60px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    &__brand {
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            span {
+                color: $color-primary;
+            }
+        }
+
+        p {
+            color: $color-text-muted;
+            max-width: 400px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    &__col {
+        h4 {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: $color-primary;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: 12px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-text-muted;
+                    font-size: 0.85rem;
+                    transition: $transition;
+
+                    &:hover {
+                        color: white;
+                        padding-left: 5px; // Subtelny ruch przy hoverze
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        padding-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 0.75rem;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer__legal {
+            a {
+                color: rgba(255, 255, 255, 0.3);
+                text-decoration: none;
+                transition: $transition;
+                &:hover {
+                    color: white;
+                }
+            }
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
+}

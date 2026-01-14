@@ -1,2 +1,104 @@
-@use "base";
-@use "typography";
+@import "variables";
+@import "mixins";
+@import "navbar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $color-bg;
+    color: $color-text;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+// Nawigacja
+.navbar {
+    padding: 30px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-weight: 900;
+        font-size: 1.4rem;
+        letter-spacing: -0.02em;
+        span {
+            color: $color-primary;
+        }
+    }
+    .nav-links {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        @include tablet {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: $color-text-muted;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: $transition;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 0; // Ostre rogi
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: inline-flex; // Zmienione na inline-flex
+    align-items: center;
+    justify-content: center;
+    min-width: 180px; // Stała szerokość dla symetrii luksusowej
+
+    &--primary {
+        background-color: #8b5cf6;
+        color: white;
+        border-color: #8b5cf6;
+        &:hover {
+            background-color: transparent;
+            color: #8b5cf6;
+        }
+    }
+
+    &--outline {
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        &:hover {
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+    }
+}
+
+@import "hero";
+@import "catalog";
+@import "features";
+@import "contact";
+@import "footer";

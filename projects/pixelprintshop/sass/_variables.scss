@@ -1,0 +1,14 @@
+// Kolory - Luksusowy Dark Mode
+$color-primary: #8b5cf6;
+$color-bg: #050505; // Głęboka czerń "Onyx"
+$color-surface: #0f0f0f; // Nieco jaśniejsza czerń dla sekcji
+$color-text: #ffffff;
+$color-text-muted: #94a3b8;
+
+// Typografia
+$font-main: "Inter", sans-serif;
+
+// Layout
+$container-width: 1200px;
+$radius: 0px; // CAŁKOWICIE OSTRE ROGI
+$transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
