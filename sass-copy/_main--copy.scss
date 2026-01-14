@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Bytesized&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Variables
+// $--sky-mist: #9ab9d4;
+// $--frost-white: #eff3f9;
+// $--terracotta: #d88c6c;
+
+$--sky-mist: #5a9bd8; //Jaśniejszy, bardziej nasycony błękit – świeży i cyfrowy
+$--frost-white: #f5f9ff; //Chłodna biel z nutą niebieskiego – czystość i nowoczesność
+$--terracotta: #e66a4e; //Głębszy, bardziej wyrazisty terrakota – emocje i kontrast
+$--accent: #ffc857; // ciepły żółty, super jako detal do kliknięcia
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.bg-sky-mist {
+    background-color: $--sky-mist !important;
+}
+
+.bg-frost-white {
+    background-color: $--frost-white !important;
+}
+
+.bg-terracotta {
+    background-color: $--terracotta !important;
+}
+
+.bg-accent {
+    background-color: $--accent !important;
+}
+
+.text-frost-white {
+    color: $--frost-white !important;
+}
+
+.text-sky-mist {
+    color: $--sky-mist !important;
+}
+
+.text-terracotta {
+    color: $--terracotta !important;
+}
+
+.text-accent {
+    color: $--accent !important;
+}
+
+.btn-sky-mist {
+    background-color: $--sky-mist !important;
+    color: $--frost-white !important;
+    border: 2px solid $--frost-white !important;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.btn-terracotta {
+    background-color: $--terracotta !important;
+    color: $--frost-white !important;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.btn-accent {
+    background-color: $--accent !important;
+    color: var(--bs-dark) !important;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+main {
+    .hero {
+        height: 100dvh;
+        width: 100%;
+        background: url("../images/hero/photocopier-7135873_1920.jpg") center
+            center / cover no-repeat;
+
+        .hero-content {
+            h1 {
+                font-size: 3rem;
+                color: $--frost-white;
+                text-align: center;
+            }
+            p {
+                text-align: right;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .about {
+        padding: 10rem 0;
+        h5 {
+            padding-left: 1rem;
+            border-left: 4px solid $--terracotta;
+        }
+        .card {
+            height: 400px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .contact {
+        form {
+            input,
+            textarea {
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid var(--bs-secondary);
+                font-size: small;
+                &::placeholder {
+                    color: var(--bs-secondary);
+                    font-size: small;
+                }
+                &:focus {
+                    border-bottom: 1px solid $--sky-mist;
+                    box-shadow: none;
+                    background-color: $--frost-white;
+                }
+            }
+        }
+    }
+}

@@ -1,157 +1,184 @@
-// scss/_contact.scss - WERSJA INVERTED (LIGHT)
+// scss/_contact.scss
 
 .contact {
     padding: 120px 0;
-    background-color: #ffffff; // Uderzająca biel
-    color: #050505; // Głęboka czerń tekstu
+    background-color: #ffffff;
+    color: #050505;
     position: relative;
+    // Ostre odcięcie od sekcji Bento
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 
     &__grid {
         display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        gap: 100px;
+        grid-template-columns: 1fr 1.5fr; // Lewa kolumna węższa, formularz szerszy
+        gap: 80px;
         align-items: start;
 
         @include tablet {
             grid-template-columns: 1fr;
-            gap: 60px;
+            gap: 50px;
+        }
+    }
+
+    // --- LEWA KOLUMNA (Info) ---
+    &__info {
+        @include tablet {
+            text-align: center;
         }
     }
 
     &__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 900;
         text-transform: uppercase;
-        letter-spacing: -0.02em;
         line-height: 1.1;
-        margin-bottom: 25px;
-        color: #050505;
-
+        margin-bottom: 40px;
         span {
             color: $color-primary;
-            // Na białym tle możemy dodać subtelniejszy gradient
-            background: linear-gradient(90deg, $color-primary, #7c3aed);
+            // Subtelny gradient na jasnym tle
+            background: linear-gradient(
+                90deg,
+                $color-primary,
+                darken($color-primary, 10%)
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
 
-    &__lead {
-        color: #4b5563; // Ciemniejszy szary dla czytelności na białym
-        font-size: 1.1rem;
-        margin-bottom: 50px;
-    }
-
     &__details {
-        .contact-item {
-            margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @include tablet {
+            align-items: center;
+        }
 
+        .contact-item {
             small {
                 display: block;
+                font-size: 0.7rem;
+                font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.2em;
-                color: $color-primary;
-                font-weight: 800;
-                font-size: 0.7rem;
-                margin-bottom: 5px;
+                color: #9ca3af; // Jasnoszary
+                margin-bottom: 8px;
             }
-
             p {
                 font-size: 1.2rem;
-                font-weight: 700;
+                font-weight: 600;
                 color: #050505;
             }
         }
     }
 
-    // FORMULARZ W STYLU STERYLNYM
+    // --- PRAWA KOLUMNA (Formularz z Mikro-interakcjami) ---
     &__form {
-        background: #f9fafb; // Bardzo jasny szary/biel
+        background: #f9fafb; // Bardzo jasne szare tło dla kontrastu
         padding: 50px;
-        border: 2px solid #050505; // Grubsza, czarna, ostra ramka
-        position: relative;
-        box-shadow: 20px 20px 0px $color-primary; // Stylizowany "luksusowy" cień
+        border: 1px solid #e5e7eb;
+        // Brutalny, techniczny cień (podobny do cennika)
+        box-shadow: 15px 15px 0px rgba($color-primary, 0.1);
 
         @include mobile {
             padding: 30px;
-            box-shadow: 10px 10px 0px $color-primary;
-        }
-
-        &::before {
-            content: "INPUT REQUIRED";
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 0.6rem;
-            color: #050505;
-            font-weight: 800;
-            letter-spacing: 0.1em;
+            box-shadow: 10px 10px 0px rgba($color-primary, 0.1);
         }
     }
 }
 
+// --- MIKRO-INTERAKCJE PÓL FORMULARZA ---
 .form-group {
-    margin-bottom: 30px;
+    position: relative; // Kluczowe dla pozycjonowania linii
+    margin-bottom: 35px;
 
+    // 1. ETYKIETA (Label)
     label {
         display: block;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.15em;
-        color: #050505;
+        letter-spacing: 0.1em;
+        color: #6b7280; // Średni szary na start
         margin-bottom: 10px;
-        font-weight: 800;
+        transition: color 0.3s ease; // Płynna zmiana koloru
     }
 
+    // 2. POLA (Input / Textarea)
     input,
-    select,
     textarea {
         width: 100%;
-        background: transparent;
+        // Usuwamy standardowe obramowanie, zostawiamy tylko dół
         border: none;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1); // Ciemniejsza linia
-        padding: 12px 0;
-        color: #050505;
-        font-family: $font-main;
+        border-bottom: 1px solid #d1d5db; // Jasnoszara linia bazowa
+        background: transparent;
+        padding: 12px 0; // Padding tylko góra/dół
+
+        // --- POPRAWKA TUTAJ ---
+        // Zamiast $font-primary wpisujemy nazwę czcionki bezpośrednio:
+        font-family: "Inter", sans-serif;
+        // ----------------------
+
         font-size: 1rem;
-        transition: $transition;
-        border-radius: 0;
+        font-weight: 600;
+        color: #050505;
+        border-radius: 0; // Reset dla iOS
+        outline: none; // Usuwamy brzydki outline przeglądarki
 
+        // Placeholder styl
         &::placeholder {
-            color: rgba(0, 0, 0, 0.3);
-        }
-
-        &:focus {
-            outline: none;
-            border-bottom-color: $color-primary;
-            // Delikatny fioletowy odblask pod spodem
-            background: linear-gradient(
-                to top,
-                rgba($color-primary, 0.03),
-                transparent
-            );
+            color: #d1d5db;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.85rem;
         }
     }
+    textarea {
+        resize: vertical;
+        height: 100px;
+    }
 
-    select {
-        cursor: pointer;
-        option {
-            background: white;
-            color: black;
+    // 3. MAGICZNA "LASEROWA LINIA" (Pseudoelement)
+    // Tworzymy element, który leży NA dolnej krawędzi inputa
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0; // Na samym dole
+        left: 0;
+        width: 0%; // NA START: szerokość 0% (niewidoczny)
+        height: 2px; // Grubsza niż bazowa linia
+        background-color: $color-primary; // Fioletowy laser
+        // Techniczna, sprężysta animacja
+        transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+        z-index: 2;
+    }
+
+    // 4. AKTYWACJA (Gdy klikniemy w pole)
+    // Używamy :focus-within - działa gdy cokolwiek wewnątrz .form-group ma fokus
+    &:focus-within {
+        // Rysujemy linię do 100%
+        &::after {
+            width: 100%;
+        }
+        // Zmieniamy kolor etykiety
+        label {
+            color: $color-primary;
         }
     }
 }
 
-// Przycisk w wersji Inverted
-.contact .btn--primary {
+// Przycisk w formularzu (dopasowanie do jasnego tła)
+.contact__form .btn--primary {
+    @include mobile {
+        width: 100%;
+    }
     background-color: #050505;
     border-color: #050505;
-    color: white;
-
     &:hover {
         background-color: $color-primary;
         border-color: $color-primary;
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba($color-primary, 0.3);
+        color: $color-text;
+        // Dodatkowy efekt świecenia przycisku
+        box-shadow: 0 0 25px rgba($color-primary, 0.4);
     }
 }

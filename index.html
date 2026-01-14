@@ -1,254 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-light" id="htmlTag">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PixelPrintShop</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
-        <script src="https://kit.fontawesome.com/37ef35aa2e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
     </head>
-    <body class="is-family-monospace">
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a href="#" class="navbar-item">
-                    <i class="fa-solid fa-shop"></i>
-                </a>
-                <div class="navbar-item ml-3" id="darkModeButton">
-                    <a class="button" onclick="toggleDarkMode()">
-                        <span class="material-symbols-outlined has-text-warning" id="darkModeSpan"> light_mode </span>
-                    </a>
+    <body class="roboto">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-lg">
+                <div class="container-xxl">
+                    <a class="navbar-brand" href="#">PixelPrintShop</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#printers">Printers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact-us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="navbar-menu m-2" id="navMenu">
-                <div class="navbar-end is-uppercase">
-                    <a href="#" class="navbar-item">Home</a>
-                    <a href="#" class="navbar-item">About</a>
-                    <a href="#servicesSection" class="navbar-item">Services</a>
-                    <a href="#" class="navbar-item">Offer</a>
-                    <a href="#" class="navbar-item">Contact</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-        <!-- <section class="hero is-fullheight" id="heroSection">
-            <div class="hero-body is-flex-direction-column is-flex-grow-0 my-auto">
-                <div class="container has-text-centered">
-                    <h1 class="bytesized-regular tracking-in-expand"><span class="has-text-link">Pixel</span><span class="has-text-link">Print</span><span class="has-text-primary">Shop</span></h1>
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                    <div class="is-flex mr-3">
-                        <span class="material-symbols-outlined" style="font-size: 5rem"> handyman </span>
+        <main>
+            <section class="hero d-flex align-items-center pb-5">
+                <div class="container-xxl h-100 d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 p-3 hero-left">
+                            <div>
+                                <img src="./images/taskAlfa 5054Ci.png" alt="kyocera taskAlfa 5054ci copier printer photocopier" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center hero-right">
+                            <h1 class="my-5 display-1 fw-bold text-light">Pixel PrintShop</h1>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi in expedita! Quia similique minus omnis deserunt repellendus voluptas quam? Iure nesciunt doloremque est, dolorem corrupti, inventore eos reiciendis officiis placeat tenetur dolores id!</p>
+                            <div class="container-fluid d-flex justify-content-end mt-5">
+                                <button class="btn btn-accent px-5">Discover</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="has-text-weight-bold is-size-4">
-                        <p class="my-0">under</p>
-                        <p class="my-0">construction</p>
-                    </div>
                 </div>
-            </div>
-        </section> -->
+            </section>
 
-        <section class="section has-background-link" id="servicesSection">
-            <div class="container is-fullhd">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
+            <!-- <section class="secondary-content py-5" id="about">
+                <div class="container-xxl d-flex flex-column py-5 gap-3">
+                    <div class="row gap-3 gap-lg-0">
+                        <div class="col-12 col-lg-6">
+                            <h4>About Pixel PrintShop</h4>
+                            <p class="display-6 mt-5 fw-bold">Printing Problems? We’ve got the Solution!</p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <i class="fa-solid fa-screwdriver-wrench has-text-link"></i>
-                            <h4 class="is-size-4 has-text-centered is-uppercase has-text-weight-bold has-text-link">Service</h4>
-                            <div class="content is-small">
-                                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="fixed-grid has-2-cols has-1-cols-mobile is-size-7">
-                    <div class="grid">
-                        <div class="cell card is-align-content-space-around is-radiusless">
-                            <div class="card-header is-shadowless">
-                                <div class="card-header-title is-size-6">PixelPrintShop</div>
-                            </div>
-                            <div class="card-content">
-                                <div class="content is-flex is-align-items-center is-gap-1 mb-3">
-                                    <span class="material-symbols-outlined has-text-primary"> home_pin </span>
-                                    <span>01-001 Warsaw, Poland</span>
-                                </div>
-                                <div class="content is-flex is-align-items-center is-gap-1 mb-3">
-                                    <span class="material-symbols-outlined has-text-primary"> phone_in_talk </span>
-                                    <span>+48 123 456 789</span>
-                                </div>
-                                <div class="content is-flex is-align-items-center is-gap-1">
-                                    <span class="material-symbols-outlined has-text-primary"> alternate_email </span>
-                                    <span>info@pixelprintshop.pl</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell">
-                            <form action="">
-                                <div class="is-flex is-gap-1">
-                                    <div class="field is-flex-grow-1">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input is-small is-radiusless" type="text" placeholder="First name" />
-                                            <span class="icon is-small is-left">
-                                                <i class="fa-solid fa-font"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="field is-flex-grow-1">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input is-small is-radiusless" type="text" placeholder="Last name" />
-                                            <span class="icon is-small is-left">
-                                                <i class="fa-solid fa-font"></i>
-                                            </span>
-                                        </p>
+                        <div class="col-12 col-lg-6">
+                            <div class="row flex-column gap-3">
+                                <div class="col-12">
+                                    <div class="card overflow-hidden border-0 h-100">
+                                        <img src="./images/Kyocera-Taskalfa-2554ci-image-3.jpg" alt="..." />
                                     </div>
                                 </div>
-                                <div class="is-flex is-gap-1">
-                                    <div class="field is-flex-grow-1">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input is-small is-radiusless" type="email" placeholder="E-mail e.g. john.doe@example.com" />
-                                            <span class="icon is-small is-left">
-                                                <i class="fa-solid fa-envelope"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <div class="field is-flex-grow-1">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input is-small is-radiusless" type="text" placeholder="Phone e.g. +48 123 123 123" />
-                                            <span class="icon is-small is-left">
-                                                <i class="fa-solid fa-phone"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="is-flex is-gap-1">
-                                    <div class="field is-flex-grow-1">
-                                        <p class="control">
-                                            <input class="input is-small is-radiusless" type="text" placeholder="Subject" />
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="is-flex mt-3">
-                                    <div class="field is-flex-grow-1">
-                                        <div class="control">
-                                            <textarea class="textarea is-small is-radiusless" placeholder="Message"></textarea>
+                                <div class="col-12">
+                                    <div class="card p-3 border-0 justify-content-between">
+                                        <div class="d-flex justify-content-end">
+                                            <span class="material-symbols-outlined text-accent" style="font-size: 6rem"> settings </span>
+                                        </div>
+                                        <div class="mt-3">
+                                            <h5>Fast, Reliable, Hassle-Free Printer Repairs.</h5>
+                                            <p>At <strong>PixelPrintShop</strong>, we understand how frustrating printer issues can be. Whether it's paper jams, connectivity problems, or poor print quality, our expert technicians are here to get your printer back in top shape—quickly and efficiently.</p>
+                                            <div class="d-flex justify-content-end pt-xxl-5">
+                                                <a href="#" class="btn btn-primary px-4 py-2 d-flex align-items-center">Read more <span class="material-symbols-outlined ms-2"> trending_flat </span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="is-flex is-justify-content-end mt-3">
-                                    <div class="field">
-                                        <div class="control">
-                                            <button class="button is-small is-primary">Send message</button>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-column gap-3">
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden border-0 h-100">
+                                <img src="./images/21ff33871dce4cec88e7eade82b122f9.webp" alt="..." />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card p-3 border-0 justify-content-between">
+                                <div class="d-flex justify-content-end">
+                                    <span class="material-symbols-outlined text-accent" style="font-size: 6rem"> select_check_box </span>
+                                </div>
+                                <div class="mt-3">
+                                    <h5 class="mb-3">Print Without Worries – We’ve Got You Covered</h5>
+                                    <p>Printing issues can be stressful—but not when you have us! At <strong>PixelPrintShop</strong>, we provide reliable and stress-free printer repairs so you never have to worry about downtime again.</p>
+                                    <div class="d-flex justify-content-end pt-5">
+                                        <a href="#" class="btn btn-primary px-4 py-2 d-flex align-items-center">Read more <span class="material-symbols-outlined ms-3"> trending_flat </span></a>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section> -->
 
-            <div class="fixed-grid has-1-cols-mobile has-2-cols-tablet mt-6 pt-3" style="border-top: 1px solid var(--bulma-dark)">
-                <div class="container grid">
-                    <div class="cell mx-auto my-auto">
-                        <div class="is-flex is-align-items-center is-gap-1">
-                            <a href="#" class="has-text-link is-size-7">Privacy policy</a>
-                            <i class="fa-solid fa-circle-dot" style="font-size: 0.25rem"></i>
-                            <a href="#" class="has-text-link is-size-7">Terms and conditions</a>
+            <section class="printers py-3" id="printers">
+                <div class="container-xxl">
+                    <div class="row justify-content-evenly mt-5 p-3 printer-details">
+                        <div class="col-12 col-lg-8">
+                            <div class="row flex-column justify-content-center h-100">
+                                <div class="card p-3">
+                                    <h4 class="text-center mb-3">Kyocera MA4000cix</h4>
+                                    <div class="printer-specification"><label>Print technology: </label><strong> Laser COLOR</strong></div>
+                                    <div class="printer-specification"><label>Print speed: </label><strong> Up to 42 pages per minute bw & color</strong></div>
+                                    <div class="printer-specification"><label>Function: </label><strong> Print, Scan, Copy</strong></div>
+                                    <div class="printer-specification"><label>Automatic 2-sided printing (duplex): </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>Format: </label><strong> A4</strong></div>
+                                    <div class="printer-specification"><label>Ethernet: </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>USB: </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>Automatic document feeder (ADF):</label><strong> YES - dual scan</strong></div>
+                                    <div class="printer-specification"><label>Screen: </label><strong> 7inch touch screen</strong></div>
+                                    <div class="printer-specification"><label>Paper capacity:</label><strong> 250 sheets</strong></div>
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-sm-6 p-3 text-center">
+                                            <a href="#" class="btn btn-primary px-5 py-1">Read more</a>
+                                        </div>
+                                        <div class="col-12 col-sm-6 text-center">
+                                            <span class="badge badge-accent fs-6 px-5 py-2">Price from $76 per month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <img src="./images/Kyocera/MA4000cix/kyocera-MA4000cix.png" class="card-img-top" alt="Kyocera MA4500cix color printer multifunction copy print scan" />
                         </div>
                     </div>
-                    <div class="cell mx-auto">
-                        <div class="is-flex is-align-items-center is-justify-content-center is-gap-1">
-                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-meta">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z" />
-                                    <path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M8 11v5" />
-                                    <path d="M8 8v.01" />
-                                    <path d="M12 16v-5" />
-                                    <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-                                    <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                    <path d="M16.5 7.5v.01" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button is-link is-light is-flex" style="scale: 0.9">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                                </svg>
-                            </a>
+                    <div class="row flex-row-reverse justify-content-evenly mt-5 p-3 printer-details">
+                        <div class="col-12 col-lg-8">
+                            <div class="row flex-column justify-content-center h-100">
+                                <div class="card p-3">
+                                    <h4 class="text-center mb-3">Kyocera MA4000cix</h4>
+                                    <div class="printer-specification"><label>Print technology: </label><strong> Laser COLOR</strong></div>
+                                    <div class="printer-specification"><label>Print speed: </label><strong> Up to 42 pages per minute bw & color</strong></div>
+                                    <div class="printer-specification"><label>Function: </label><strong> Print, Scan, Copy</strong></div>
+                                    <div class="printer-specification"><label>Automatic 2-sided printing (duplex): </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>Format: </label><strong> A4</strong></div>
+                                    <div class="printer-specification"><label>Ethernet: </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>USB: </label><strong> YES</strong></div>
+                                    <div class="printer-specification"><label>Automatic document feeder (ADF):</label><strong> YES - dual scan</strong></div>
+                                    <div class="printer-specification"><label>Screen: </label><strong> 7inch touch screen</strong></div>
+                                    <div class="printer-specification"><label>Paper capacity:</label><strong> 250 sheets</strong></div>
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-sm-6 p-3 text-center">
+                                            <a href="#" class="btn btn-primary px-5 py-1">Read more</a>
+                                        </div>
+                                        <div class="col-12 col-sm-6 text-center">
+                                            <span class="badge badge-accent fs-6 px-5 py-2">Price from $76 per month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <img src="./images/Kyocera/MA4000cix/kyocera-MA4000cix.png" class="card-img-top" alt="Kyocera MA4500cix color printer multifunction copy print scan" />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- <section class="secondary-content py-3">
+                <div class="container-xxl text-center">
+                    <div class="card border-0">
+                        <p class="fw-light m-0 mt-5">Your next big opportunity starts here.</p>
+                        <p class="display-5 mt-0 mb-5">Let’s Create Together!</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-3 gap-lg-5 mb-5">
+                            <a class="btn btn-primary d-flex align-items-center px-5">Contact us <span class="material-symbols-outlined text-accent ms-3"> phone_in_talk </span></a>
+                            <a class="btn btn-primary d-flex align-items-center px-5">Send e-mail <span class="material-symbols-outlined text-accent ms-3"> mail </span></a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <footer class="footer bg-black" id="footer">
+            <div class="container-xxl pt-5">
+                <div class="row">
+                    <div class="col-4 p-3">
+                        <div class="d-flex flex-column">
+                            <h6 class="border-bottom pb-2 mb-5 text-white text-uppercase">About us</h6>
+                            <p class="text-secondary d-flex align-items-center" style="font-size: small"><span class="material-symbols-outlined me-2"> home </span>01-001 Warsaw, Poland <br />Al. Jerozolimskie 112</p>
+                            <p class="text-secondary d-flex align-items-center" style="font-size: small"><span class="material-symbols-outlined me-2"> mail </span> info@pixelprintshop.pl</p>
+                            <p class="text-secondary d-flex align-items-center" style="font-size: small"><span class="material-symbols-outlined me-2"> phone_in_talk </span> +48 123 456 789</p>
+                        </div>
+
+                        <a href="#" class="btn d-flex align-items-center text-white mt-5">Contact us <span class="material-symbols-outlined ms-2"> trending_flat </span></a>
+                    </div>
+                    <div class="col-4 p-3">
+                        <div class="d-flex flex-column">
+                            <h6 class="border-bottom pb-2 mb-5 text-white text-uppercase">Pages</h6>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">About</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Products</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Pricing</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Contact</p>
+                        </div>
+                    </div>
+                    <div class="col-4 p-3">
+                        <div class="d-flex flex-column">
+                            <h6 class="border-bottom pb-2 mb-5 text-white text-uppercase">Socials</h6>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Facebook</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Instagram</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">LinkedIn</p>
+                            <p class="text-secondary d-flex align-items-center mb-1" style="font-size: small">Twitter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center pt-5">
+                    <p class="w-auto mx-auto mx-md-0 fs-5 text-white">PixelPrintShop</p>
+                    <p class="w-auto mx-auto mx-md-0 text-secondary" style="font-size: x-small">© 2025 PixelPrintShop. All rights reserved.</p>
                 </div>
             </div>
         </footer>
